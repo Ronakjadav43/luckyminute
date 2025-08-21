@@ -1,0 +1,394 @@
+// .read_message {
+//   display: flex;
+//   flex-direction: column;
+//   width: 100%;
+//   padding: 10px 20px;
+//   gap: 30px;
+//   position: relative;
+
+//   .read_message_header {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     width: 100%;
+//     padding: 10px;
+//     height: 30px;
+//     background-color: #434343;
+
+//     .read_message_header_text {
+//       width: 50%;
+//       font-family: "Inter";
+//       font-style: normal;
+//       font-weight: 400;
+//       font-size: 16px;
+//       line-height: 19px;
+//       display: flex;
+//       align-items: center;
+//       justify-content: flex-start;
+//       color: #f4b400;
+
+//       &:nth-child(2) {
+//         color: #ffffff;
+//         justify-content: flex-end;
+//       }
+//     }
+//   }
+
+//   .message_field {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     width: 100%;
+
+//     .message_text {
+//       font-family: "Inter";
+//       font-weight: 400;
+//       font-size: 12px;
+//       line-height: 15px;
+//       display: flex;
+//       align-items: center;
+//       color: #000000;
+//     }
+
+//     .message_input {
+//       max-width: 258px;
+//       width: 100%;
+//       height: 30px;
+//       font-family: "Inter";
+//       font-weight: 400;
+//       font-size: 12px;
+//       line-height: 15px;
+//       display: flex;
+//       align-items: center;
+//       color: #000000;
+//       justify-content: center;
+//     }
+//   }
+
+//   .enter_message {
+//     display: flex;
+//     flex-direction: column;
+//     width: 100%;
+//     gap: 5px;
+
+//     .message_text {
+//       font-family: "Inter";
+//       font-weight: 400;
+//       font-size: 12px;
+//       line-height: 15px;
+//       display: flex;
+//       align-items: center;
+//       color: #000000;
+//     }
+
+//     .message_input {
+//       width: 100%;
+//       height: 198px;
+//       background: #d9d9d9;
+//       border: 1px solid #ff9900;
+//       font-family: "Inter";
+//       font-weight: 400;
+//       font-size: 12px;
+//       line-height: 15px;
+//       display: flex;
+//       color: #000000;
+//       padding: 20px;
+//       align-items: flex-start !important;
+//       justify-content: flex-start !important;
+//     }
+//   }
+// }
+
+// @media only screen and (min-width: 300px) and (min-height: 430px) {
+//   .read_message {
+//     padding: 10px 10px;
+//     height: calc(100% - 55px);
+//     gap: 10px;
+
+//     .read_message_header {
+//       height: 30px;
+
+//       .read_message_header_text {
+//         font-size: 14px;
+//         line-height: 18px;
+//       }
+//     }
+
+//     .message_field {
+//       .message_text {
+//         font-size: 14px;
+//         line-height: 16px;
+//       }
+
+//       .message_input {
+//         max-width: 200px;
+//         height: 30px;
+//       }
+//     }
+
+//     .enter_message {
+//       .message_text {
+//         font-size: 14px;
+//         line-height: 16px;
+//       }
+
+//       .message_input {
+//         height: 100px;
+//       }
+//     }
+//   }
+// }
+
+// @media only screen and (min-width: 360px) and (min-height: 485px) {
+//   .read_message {
+//     padding: 10px 10px;
+//     height: calc(100% - 55px);
+//     gap: 10px;
+
+//     .read_message_header {
+//       height: 30px;
+
+//       .read_message_header_text {
+//         font-size: 14px;
+//         line-height: 18px;
+//       }
+//     }
+
+//     .message_field {
+//       .message_text {
+//         font-size: 14px;
+//         line-height: 16px;
+//       }
+
+//       .message_input {
+//         max-width: 250px;
+//         height: 30px;
+//       }
+//     }
+
+//     .enter_message {
+//       .message_text {
+//         font-size: 14px;
+//         line-height: 16px;
+//       }
+//     }
+//   }
+// }
+
+// @media only screen and (min-width: 300px) and (min-height: 550px) {
+//   .read_message {
+//     padding: 10px 10px;
+//     height: calc(100% - 55px);
+
+//     .read_message_header {
+//       height: 30px;
+
+//       .read_message_header_text {
+//         font-size: 14px;
+//         line-height: 18px;
+//       }
+//     }
+
+//     .message_field {
+//       .message_text {
+//         font-size: 14px;
+//         line-height: 18px;
+//       }
+
+//       .message_input {
+//         max-width: 200px;
+//         height: 30px;
+//       }
+//     }
+
+//     .enter_message {
+//       .message_text {
+//         font-size: 14px;
+//         line-height: 18px;
+//       }
+//     }
+//   }
+// }
+
+// @media only screen and (min-width: 360px) and (min-height: 620px) {
+//   .read_message {
+//     padding: 10px 10px;
+//     height: calc(100% - 55px);
+
+//     .read_message_header {
+//       height: 30px;
+
+//       .read_message_header_text {
+//         font-size: 16px;
+//         line-height: 20px;
+//       }
+//     }
+
+//     .message_field {
+//       .message_text {
+//         font-size: 16px;
+//         line-height: 20px;
+//       }
+
+//       .message_input {
+//         max-width: 250px;
+//         height: 30px;
+//       }
+//     }
+
+//     .enter_message {
+//       .message_text {
+//         font-size: 16px;
+//         line-height: 20px;
+//       }
+//     }
+//   }
+// }
+
+// @media only screen and (min-width: 390px) and (min-height: 660px) {
+//   .read_message {
+//     padding: 10px 20px;
+//     height: calc(100% - 60px);
+
+//     .read_message_header {
+//       height: 30px;
+
+//       .read_message_header_text {
+//         font-size: 16px;
+//         line-height: 20px;
+//       }
+//     }
+
+//     .message_field {
+//       .message_text {
+//         font-size: 16px;
+//         line-height: 20px;
+//       }
+
+//       .message_input {
+//         max-width: 250px;
+//         height: 40px;
+//       }
+//     }
+
+//     .enter_message {
+//       .message_text {
+//         font-size: 16px;
+//         line-height: 20px;
+//       }
+
+//       .message_input {
+//         height: 150px;
+//       }
+//     }
+//   }
+// }
+
+// @media only screen and (min-width: 420px) and (min-height: 700px) {
+//   .read_message {
+//     padding: 10px 20px;
+//     height: calc(100% - 70px);
+
+//     .read_message_header {
+//       height: 30px;
+
+//       .read_message_header_text {
+//         font-size: 16px;
+//         line-height: 20px;
+//       }
+//     }
+
+//     .message_field {
+//       .message_text {
+//         font-size: 16px;
+//         line-height: 20px;
+//       }
+
+//       .message_input {
+//         max-width: 250px;
+//         height: 50px;
+//       }
+//     }
+
+//     .enter_message {
+//       .message_text {
+//         font-size: 16px;
+//         line-height: 20px;
+//       }
+
+//       .message_input {
+//         height: 200px;
+//       }
+//     }
+//   }
+// }
+
+// @media only screen and (min-width: 540px) and (min-height: 930px) {
+//   .read_message {
+//     padding: 10px 20px;
+//     height: calc(100% - 80px);
+
+//     .read_message_header {
+//       height: 40px;
+
+//       .read_message_header_text {
+//         font-size: 18px;
+//         line-height: 22px;
+//       }
+//     }
+
+//     .message_field {
+//       .message_text {
+//         font-size: 18px;
+//         line-height: 22px;
+//       }
+
+//       .message_input {
+//         max-width: 350px;
+//         height: 50px;
+//       }
+//     }
+
+//     .enter_message {
+//       .message_text {
+//         font-size: 18px;
+//         line-height: 22px;
+//       }
+//     }
+//   }
+// }
+
+// @media only screen and (min-width: 720px) and (min-height: 1240px) {
+//   .read_message {
+//     padding: 10px 20px;
+//     height: calc(100% - 110px);
+
+//     .read_message_header {
+//       height: 50px;
+
+//       .read_message_header_text {
+//         font-size: 22px;
+//         line-height: 26px;
+//       }
+//     }
+
+//     .message_field {
+//       .message_text {
+//         font-size: 22px;
+//         line-height: 26px;
+//       }
+
+//       .message_input {
+//         max-width: 480px;
+//         height: 50px;
+//       }
+//     }
+
+//     .enter_message {
+//       .message_text {
+//         font-size: 22px;
+//         line-height: 26px;
+//       }
+//     }
+//   }
+// }

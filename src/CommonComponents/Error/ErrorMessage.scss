@@ -1,0 +1,18 @@
+.error_message {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #434343;
+    height: 48vh;
+    max-height: 340px;
+
+    .error_text {
+        font-size: 20px;
+        color: #fff;
+        text-align: left;
+        width: calc(100% - 20%);
+        margin: 0 auto 30px;
+    }
+}

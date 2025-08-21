@@ -1,0 +1,14 @@
+steps:
+- name: node:18.7
+  script: |
+    #!/usr/bin/env bash
+    npm install
+    npm run build
+
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk:slim'
+  entrypoint: '/bin/bash'
+  args:
+    - '-c'
+    - |
+      mv /workspace/build /workspace/$TAG_NAME
+      gsutil -m cp -nr /workspace/$TAG_NAME 'gs://luckyminute-reactjs/'

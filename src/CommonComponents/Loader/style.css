@@ -1,0 +1,75 @@
+.loadingPanel {
+    display: block;
+    z-index: 1000;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    /* height: 100%; */
+    width: 100%;
+    opacity: 0.8;
+}
+
+.blocked {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+    cursor: pointer;
+}
+
+body {
+    font-family: "Montserrat", Helvetica, Arial, sans-serif !important;
+}
+
+body.loading {
+    overflow: hidden;
+}
+
+body.loading .loadingPanel {
+    display: block;
+}
+
+
+@media only screen and (min-width: 300px) and (min-height: 550px) {
+    .loadingPanel {
+        height: 550px;
+    }
+}
+
+@media only screen and (min-width: 360px) and (min-height: 620px) {
+    .loadingPanel {
+        height: 620px;
+    }
+}
+
+@media only screen and (min-width: 390px) and (min-height: 660px) {
+    .loadingPanel {
+        height: 660px;
+    }
+}
+
+@media only screen and (min-width: 420px) and (min-height: 700px) {
+    .loadingPanel {
+        height: 700px;
+    }
+}
+
+@media only screen and (min-width: 540px) and (min-height: 930px) {
+    .loadingPanel {
+        height: 930px;
+    }
+}
+
+
+@media only screen and (min-width: 720px) and (min-height: 1240px) {
+    .loadingPanel {
+        height: 1240px;
+    }
+}

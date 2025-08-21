@@ -1,0 +1,691 @@
+// * {
+//   -moz-box-sizing: border-box;
+//   -webkit-box-sizing: border-box;
+//   box-sizing: border-box;
+// }
+
+// .wrapper {
+//   // background: #f5f5f5;
+//   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+//   font-weight: 100;
+//   letter-spacing: -1px;
+// }
+
+// .card {
+//   width: 75px;
+//   height: 105px !important;
+//   background: #fff;
+//   margin: 0 !important;
+//   -moz-border-radius: 12px;
+//   -webkit-border-radius: 12px;
+//   border-radius: 12px;
+//   -moz-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.25);
+//   -webkit-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.25);
+//   box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.25);
+//   position: relative;
+//   overflow: hidden;
+//   color: white;
+//   -moz-animation: fadeInCard 0.6s forwards;
+//   -webkit-animation: fadeInCard 0.6s forwards;
+//   animation: fadeInCard 0.6s forwards;
+// }
+
+// .card:before {
+//   display: none !important;
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   bottom: 0;
+//   left: 0;
+//   right: -50px;
+//   background: #0c0b13;
+//   border-left: solid 250px #664c4f;
+//   -moz-animation: fadeInDark 0.8s forwards;
+//   -webkit-animation: fadeInDark 0.8s forwards;
+//   animation: fadeInDark 0.8s forwards;
+// }
+
+// .card:after {
+//   content: "";
+//   position: absolute;
+//   top: -50px;
+//   bottom: -50px;
+//   left: 50px;
+//   right: 50px;
+//   background: rgba(225, 98, 63, 0.7);
+//   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+//   opacity: 0;
+//   -moz-animation: fadeInRed 0.7s 0.5s forwards;
+//   -webkit-animation: fadeInRed 0.7s 0.5s forwards;
+//   animation: fadeInRed 0.7s 0.5s forwards;
+// }
+
+// .card .content {
+//   display: none;
+//   z-index: 10;
+//   position: absolute;
+//   top: 45%;
+//   left: 50%;
+//   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+//   opacity: 0;
+//   transform: translate(-50%, -50%);
+//   -moz-animation: fadeInText 1.2s 0.1s forwards;
+//   -webkit-animation: fadeInText 1.2s 0.1s forwards;
+//   animation: fadeInText 1.2s 0.1s forwards;
+// }
+
+// .card .content h1 {
+//   font-size: 60px;
+//   line-height: 40px;
+//   margin: 0;
+// }
+
+// .card .content h2 {
+//   margin: 0;
+//   font-size: 36px;
+//   line-height: 36px;
+// }
+
+// .card .content h2 sup {
+//   font-size: 14px;
+// }
+
+// .card .mark {
+//   position: absolute;
+//   font-size: 24px;
+//   font-weight: bold;
+//   top: 0px;
+//   left: 0px;
+//   opacity: 0;
+//   animation: fadeInMark 0.8s 0.5s forwards;
+//   background-color: unset !important;
+//   bottom: 0;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+// }
+
+// .card .mark:after {
+//   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+//   display: block;
+//   font-style: normal;
+//   font-weight: normal;
+//   font-variant: normal;
+//   text-transform: none;
+//   text-rendering: auto;
+//   font-size: 20px;
+//   color: #e1623f;
+//   margin-left: 0px;
+//   margin-top: 0px;
+// }
+
+// .card .S:after {
+//   content: "\2660";
+//   color: #000;
+// }
+
+// .card .S {
+//   color: #000 !important;
+// }
+
+// .card .H:after {
+//   content: "\2665";
+//   color: #e1623f;
+// }
+
+// .card .H {
+//   color: #e1623f !important;
+// }
+
+// .card .C:after {
+//   content: "\2663";
+//   color: #000;
+// }
+
+// .card .C {
+//   color: #000 !important;
+// }
+
+// .card .D:after {
+//   content: "\2666";
+//   color: #e1623f;
+// }
+
+// .card .D {
+//   color: #e1623f !important;
+// }
+
+// .card .mark.upside-down {
+//   -moz-transform: rotate(180deg);
+//   -ms-transform: rotate(180deg);
+//   -webkit-transform: rotate(180deg);
+//   transform: rotate(180deg);
+//   top: 0;
+//   left: auto;
+//   bottom: 0px;
+//   right: 0px;
+//   color: #e1623f;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+// }
+
+// // .card .mark.upside-down:after {
+// //     color: #CCC5B3;
+// // }
+
+// span.dark,
+// div.content h1 {
+//   text-transform: uppercase;
+// }
+
+// .dark {
+//   color: #e1623f;
+// }
+
+// @-moz-keyframes fadeInCard {
+//   from {
+//     top: 40px;
+//     -moz-transform: scale(1.2) rotate(10deg);
+//     transform: scale(1.2) rotate(10deg);
+//   }
+
+//   to {
+//     top: 0px;
+//     -moz-transform: scale(1) rotate(0deg);
+//     transform: scale(1) rotate(0deg);
+//   }
+// }
+
+// @-webkit-keyframes fadeInCard {
+//   from {
+//     top: 40px;
+//     -webkit-transform: scale(1.2) rotate(10deg);
+//     transform: scale(1.2) rotate(10deg);
+//   }
+
+//   to {
+//     top: 0px;
+//     -webkit-transform: scale(1) rotate(0deg);
+//     transform: scale(1) rotate(0deg);
+//   }
+// }
+
+// @keyframes fadeInCard {
+//   from {
+//     top: 40px;
+//     -moz-transform: scale(1.2) rotate(10deg);
+//     -ms-transform: scale(1.2) rotate(10deg);
+//     -webkit-transform: scale(1.2) rotate(10deg);
+//     transform: scale(1.2) rotate(10deg);
+//   }
+
+//   to {
+//     top: 0px;
+//     -moz-transform: scale(1) rotate(0deg);
+//     -ms-transform: scale(1) rotate(0deg);
+//     -webkit-transform: scale(1) rotate(0deg);
+//     transform: scale(1) rotate(0deg);
+//   }
+// }
+
+// @-moz-keyframes fadeInDark {
+//   from {
+//     opacity: 0;
+//     -moz-transform: rotate(72deg) translate(120px, 800px);
+//     transform: rotate(72deg) translate(120px, 800px);
+//   }
+
+//   30% {
+//     opacity: 0.1;
+//   }
+
+//   to {
+//     opacity: 1;
+//     -moz-transform: rotate(72deg) translate(75px, 20px);
+//     transform: rotate(72deg) translate(75px, 20px);
+//   }
+// }
+
+// @-webkit-keyframes fadeInDark {
+//   from {
+//     opacity: 0;
+//     -webkit-transform: rotate(72deg) translate(120px, 800px);
+//     transform: rotate(72deg) translate(120px, 800px);
+//   }
+
+//   30% {
+//     opacity: 0.1;
+//   }
+
+//   to {
+//     opacity: 1;
+//     -webkit-transform: rotate(72deg) translate(75px, 20px);
+//     transform: rotate(72deg) translate(75px, 20px);
+//   }
+// }
+
+// @keyframes fadeInDark {
+//   from {
+//     opacity: 0;
+//     -moz-transform: rotate(72deg) translate(120px, 800px);
+//     -ms-transform: rotate(72deg) translate(120px, 800px);
+//     -webkit-transform: rotate(72deg) translate(120px, 800px);
+//     transform: rotate(72deg) translate(120px, 800px);
+//   }
+
+//   30% {
+//     opacity: 0.1;
+//   }
+
+//   to {
+//     opacity: 1;
+//     -moz-transform: rotate(72deg) translate(75px, 20px);
+//     -ms-transform: rotate(72deg) translate(75px, 20px);
+//     -webkit-transform: rotate(72deg) translate(75px, 20px);
+//     transform: rotate(72deg) translate(75px, 20px);
+//   }
+// }
+
+// @-moz-keyframes fadeInRed {
+//   from {
+//     opacity: 0;
+//     -moz-transform: rotate(70deg) translate(7px, 800px);
+//     transform: rotate(70deg) translate(7px, 800px);
+//   }
+
+//   30% {
+//     opacity: 0.2;
+//   }
+
+//   to {
+//     opacity: 1;
+//     -moz-transform: rotate(58deg) translate(0px, 0px);
+//     transform: rotate(58deg) translate(0px, 0px);
+//   }
+// }
+
+// @-webkit-keyframes fadeInRed {
+//   from {
+//     opacity: 0;
+//     -webkit-transform: rotate(70deg) translate(7px, 800px);
+//     transform: rotate(70deg) translate(7px, 800px);
+//   }
+
+//   30% {
+//     opacity: 0.2;
+//   }
+
+//   to {
+//     opacity: 1;
+//     -webkit-transform: rotate(58deg) translate(0px, 0px);
+//     transform: rotate(58deg) translate(0px, 0px);
+//   }
+// }
+
+// @keyframes fadeInRed {
+//   from {
+//     opacity: 0;
+//     -moz-transform: rotate(70deg) translate(7px, 800px);
+//     -ms-transform: rotate(70deg) translate(7px, 800px);
+//     -webkit-transform: rotate(70deg) translate(7px, 800px);
+//     transform: rotate(70deg) translate(7px, 800px);
+//   }
+
+//   30% {
+//     opacity: 0.2;
+//   }
+
+//   to {
+//     opacity: 1;
+//     -moz-transform: rotate(58deg) translate(0px, 0px);
+//     -ms-transform: rotate(58deg) translate(0px, 0px);
+//     -webkit-transform: rotate(58deg) translate(0px, 0px);
+//     transform: rotate(58deg) translate(0px, 0px);
+//   }
+// }
+
+// @-moz-keyframes fadeInText {
+//   from {
+//     opacity: 0;
+//   }
+
+//   to {
+//     top: 50%;
+//     opacity: 1;
+//   }
+// }
+
+// @-webkit-keyframes fadeInText {
+//   from {
+//     opacity: 0;
+//   }
+
+//   to {
+//     top: 50%;
+//     opacity: 1;
+//   }
+// }
+
+// @keyframes fadeInText {
+//   from {
+//     opacity: 0;
+//   }
+
+//   to {
+//     top: 50%;
+//     opacity: 1;
+//   }
+// }
+
+// @-moz-keyframes fadeInMark {
+//   from {
+//     opacity: 0;
+//   }
+
+//   to {
+//     opacity: 1;
+//   }
+// }
+
+// @-webkit-keyframes fadeInMark {
+//   from {
+//     opacity: 0;
+//   }
+
+//   to {
+//     opacity: 1;
+//   }
+// }
+
+// @keyframes fadeInMark {
+//   from {
+//     opacity: 0;
+//   }
+
+//   to {
+//     opacity: 1;
+//   }
+// }
+
+// .card {
+//   width: 50px;
+//   height: 70px !important;
+// }
+
+// @media only screen and (min-width: 300px) and (min-height: 430px) {
+//   .card {
+//     width: 43px;
+//     height: 61px !important;
+//   }
+
+//   .card .mark:after,
+//   .card .mark.upside-down,
+//   .card .mark {
+//     font-size: 16px;
+//   }
+// }
+
+// @media only screen and (min-width: 360px) and (min-height: 485px) {
+//   .card {
+//     width: 43px;
+//     height: 61px !important;
+//   }
+
+//   .card .mark:after,
+//   .card .mark.upside-down,
+//   .card .mark {
+//     font-size: 16px;
+//   }
+// }
+
+// @media only screen and (min-width: 300px) and (min-height: 550px) {
+//   .card {
+//     width: 43px;
+//     height: 61px !important;
+//   }
+//   .card .mark:after,
+//   .card .mark.upside-down,
+//   .card .mark {
+//     font-size: 16px;
+//   }
+// }
+
+// @media only screen and (min-width: 360px) and (min-height: 620px) {
+//   .card {
+//     width: 50px;
+//     height: 70px !important;
+//   }
+//   .card .mark:after,
+//   .card .mark.upside-down,
+//   .card .mark {
+//     font-size: 18px;
+//   }
+// }
+
+// @media only screen and (min-width: 390px) and (min-height: 660px) {
+//   .card {
+//     width: 55px;
+//     height: 78px !important;
+//   }
+//   .card .mark:after,
+//   .card .mark.upside-down,
+//   .card .mark {
+//     font-size: 18px;
+//   }
+// }
+
+// @media only screen and (min-width: 420px) and (min-height: 700px) {
+//   .card {
+//     width: 62px;
+//     height: 87px !important;
+//   }
+
+//   .card .mark:after,
+//   .card .mark.upside-down,
+//   .card .mark {
+//     font-size: 25px;
+//   }
+// }
+
+// @media only screen and (min-width: 540px) and (min-height: 930px) {
+//   .card {
+//     width: 75px;
+//     height: 105px !important;
+//   }
+//   .card .mark:after,
+//   .card .mark.upside-down,
+//   .card .mark {
+//     font-size: 30px;
+//   }
+// }
+
+// @media only screen and (min-width: 720px) and (min-height: 1240px) {
+//   .card {
+//     width: 100px;
+//     height: 140px !important;
+//   }
+
+//   .card .mark:after,
+//   .card .mark.upside-down,
+//   .card .mark {
+//     font-size: 35px;
+//   }
+// }
+
+.playing_cards {
+  width: 50px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #ffffff;
+  border: 1px solid #666666;
+  border-radius: 5px;
+  padding: 12px;
+
+  .card_icon {
+    background-repeat: no-repeat;
+    background-size: 20px;
+    width: 100%;
+    height: 35%;
+    display: flex;
+  }
+
+  .S {
+    background-image: url("../../../../public/img/Spades.svg");
+    color: #000 !important;
+  }
+  .H {
+    background-image: url("../../../../public/img/Hearts.svg");
+    color: #ff0000 !important;
+  }
+  .C {
+    background-image: url("../../../../public/img/Clubs.svg");
+    color: #000 !important;
+  }
+  .D {
+    background-image: url("../../../../public/img/Diamonds.svg");
+    color: #ff0000 !important;
+  }
+  .numbers {
+    width: 100%;
+    height: 65%;
+    display: flex;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ff0000;
+    background-image: unset !important;
+  }
+}
+
+// @media only screen and (min-width: 300px) and (min-height: 430px) {
+// .playing_cards {
+//     width: 100px;
+//     height: 140px;
+
+//     .card_icon {
+//       background-size: 20px;
+//     }
+
+//     .numbers {
+//       font-size: 36px;
+//     }
+//   }
+// }
+
+// @media only screen and (min-width: 360px) and (min-height: 485px) {
+// .playing_cards {
+//     width: 100px;
+//     height: 140px;
+
+//     .card_icon {
+//       background-size: 20px;
+//     }
+
+//     .numbers {
+//       font-size: 36px;
+//     }
+//   }
+// }
+
+@media only screen and (min-width: 300px) and (min-height: 550px) {
+.playing_cards {
+      width: 43px;
+        height: 61px;
+padding: 4px;
+
+  .card_icon {
+    background-size: 14px;
+  }
+
+  .numbers {
+    font-size: 30px;
+  }
+  }
+}
+
+@media only screen and (min-width: 360px) and (min-height: 620px) {
+.playing_cards {
+    width: 50px;
+      height: 70px;
+padding: 5px;
+
+  .card_icon {
+    background-size: 15px;
+  }
+
+  .numbers {
+    font-size: 33px;
+  }
+}
+  }
+
+
+@media only screen and (min-width: 390px) and (min-height: 660px) {
+.playing_cards {
+    width: 55px;
+      height: 78px;
+  padding: 6px;
+    .card_icon {
+        background-size: 16px;
+      }
+    
+      .numbers {
+        font-size: 36px;
+      }
+  }
+}
+
+@media only screen and (min-width: 420px) and (min-height: 700px) {
+.playing_cards {
+    width: 62px;
+      height: 87px;
+      padding: 8px;
+    .card_icon {
+      background-size: 16px;
+    }
+
+    .numbers {
+      font-size: 40px;
+    }
+  }
+}
+
+@media only screen and (min-width: 540px) and (min-height: 930px) {
+.playing_cards {
+    width: 75px;
+      height: 105px;
+      padding: 12px;
+
+    .card_icon {
+      background-size: 22px;
+    }
+
+    .numbers {
+      font-size: 48px;
+    }
+  }
+}
+
+@media only screen and (min-width: 720px) and (min-height: 1240px) {
+  .playing_cards {
+   width: 100px;
+            height: 140px;
+            padding: 12px;
+  .card_icon {
+    background-size: 30px;
+  }
+
+  .numbers {
+    font-size: 65px;
+  }
+}
+}

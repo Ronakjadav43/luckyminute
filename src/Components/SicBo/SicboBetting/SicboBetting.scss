@@ -1,0 +1,891 @@
+.sicbobetting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+
+  .sicbo_row_one {
+    width: 100%;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ff9900;
+    background-color: #434343;
+
+    .row_one_inner:nth-child(2) {
+      border-left: 1px solid #ff9900;
+      border-right: 1px solid #ff9900;
+      flex-direction: row !important;
+    }
+
+    .row_one_inner {
+      width: 112px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .row_one_icon {
+        font-family: "Inter";
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 35px;
+        color: #ffffff;
+      }
+
+      .row_one_text {
+        font-family: "Inter";
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #ffffff;
+      }
+
+      .row_one_dice {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+
+        .dice_inner {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+
+          .first-face {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          .dice {
+            padding: 2px;
+            width: 15px;
+            height: 15px;
+            border-radius: 10%;
+            border: 1px solid #f3f3f3;
+          }
+
+          .dot {
+            display: block;
+            width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            background-color: #f3f3f3;
+          }
+
+          .second-face {
+            display: flex;
+            justify-content: space-between;
+          }
+
+          .second-face .dot:nth-of-type(1) {
+            align-self: flex-end;
+          }
+
+          .third-face {
+            display: flex;
+            justify-content: space-between;
+          }
+
+          .third-face .dot:nth-of-type(1) {
+            align-self: flex-end;
+          }
+
+          .third-face .dot:nth-of-type(2) {
+            align-self: center;
+          }
+
+          .fourth-face,
+          .sixth-face,
+          .fifth-face {
+            display: flex;
+            justify-content: space-between;
+          }
+
+          .fourth-face .column,
+          .sixth-face .column,
+          .fifth-face .column {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          }
+
+          .fifth-face .column:nth-of-type(2) {
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+
+  .sicbo_row_second {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ff9900;
+    background-color: #434343;
+    width: 100%;
+    height: 54px;
+
+    .row_second_inner:nth-child(6) {
+      border-right: unset;
+    }
+
+    .row_second_inner {
+      width: 56px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 5px;
+      justify-content: space-between;
+      border-right: 1px solid #ff9900;
+
+      .second_inner:nth-child(2) {
+        justify-content: space-between;
+      }
+
+      .second_inner {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        .first-face {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .dice {
+          padding: 5%;
+          width: 20px;
+          height: 20px;
+          border-radius: 10%;
+          border: 1px solid #f3f3f3;
+        }
+
+        .dot {
+          display: block;
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          background-color: #f3f3f3;
+        }
+
+        .second-face {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .second-face .dot:nth-of-type(1) {
+          align-self: flex-end;
+        }
+
+        .third-face {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .third-face .dot:nth-of-type(1) {
+          align-self: flex-end;
+        }
+
+        .third-face .dot:nth-of-type(2) {
+          align-self: center;
+        }
+
+        .fourth-face,
+        .sixth-face,
+        .fifth-face {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .fourth-face .column,
+        .sixth-face .column,
+        .fifth-face .column {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+
+        .fifth-face .column:nth-of-type(2) {
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  .sicbo_row_third {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ff9900;
+    background-color: #434343;
+    width: 100%;
+
+    .row_third_inner:nth-child(2) {
+      border-bottom: unset;
+    }
+
+    .row_third_inner {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #ff9900;
+      height: 46px;
+
+      .sicbo_bet:nth-child(7) {
+        border-right: unset;
+      }
+
+      .sicbo_bet {
+        width: 48px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Inter";
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #ffffff;
+        border-right: 1px solid #ff9900;
+      }
+    }
+  }
+
+  .sicbo_row_fourth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ff9900;
+    background-color: #434343;
+    width: 100%;
+    height: 54px;
+
+    .row_fourth_inner:nth-child(6) {
+      border-right: unset;
+    }
+
+    .row_fourth_inner {
+      width: 56px;
+      height: 100%;
+      display: flex;
+      padding: 5px;
+      justify-content: center;
+      align-items: center;
+      border-right: 1px solid #ff9900;
+
+      .fourth_inner:nth-child(2) {
+        justify-content: space-between;
+      }
+
+      .first-face {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .dice {
+        padding: 10%;
+        width: 80%;
+        height: 80%;
+        border-radius: 10%;
+        border: 1px solid #f3f3f3;
+      }
+
+      .dot {
+        display: block;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: #f3f3f3;
+      }
+
+      .second-face {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .second-face .dot:nth-of-type(1) {
+        align-self: flex-end;
+      }
+
+      .third-face {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .third-face .dot:nth-of-type(1) {
+        align-self: flex-end;
+      }
+
+      .third-face .dot:nth-of-type(2) {
+        align-self: center;
+      }
+
+      .fourth-face,
+      .sixth-face,
+      .fifth-face {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .fourth-face .column,
+      .sixth-face .column,
+      .fifth-face .column {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .fifth-face .column:nth-of-type(2) {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.selected-bet {
+  background: #000000 !important;
+  border: 1px solid #ff9900 !important;
+}
+
+@media only screen and (min-width: 300px) and (min-height: 550px) {
+  .sicbobetting {
+    gap: 14px;
+
+    .sicbo_row_one {
+      height: 70px;
+
+      .row_one_inner {
+        width: 98px;
+
+        .row_one_icon {
+          font-size: 21px;
+          line-height: 25px;
+        }
+
+        .row_one_text {
+          font-size: 16px;
+          line-height: 19px;
+        }
+
+        .row_one_dice {
+          .dice_inner {
+            .dice {
+              padding: 2px;
+              width: 14px;
+              height: 14px;
+            }
+
+            .dot {
+              width: 2px;
+              height: 2px;
+            }
+          }
+        }
+      }
+    }
+
+    .sicbo_row_second {
+      height: 49px;
+
+      .row_second_inner {
+        width: 49px;
+        padding: 3px;
+
+        .second_inner .dice {
+          // padding: 2px;
+          width: 18px;
+          height: 18px;
+
+          .dot {
+            width: 3px;
+            height: 3px;
+          }
+        }
+      }
+    }
+
+    .sicbo_row_third {
+      .row_third_inner {
+        height: 42px;
+
+        .sicbo_bet {
+          width: 42px;
+          font-size: 16px;
+        }
+      }
+    }
+
+    .sicbo_row_fourth {
+      height: 49px;
+
+      .row_fourth_inner {
+        width: 49px;
+
+        .dot {
+          width: 4px;
+          height: 4px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 360px) and (min-height: 620px) {
+  .sicbobetting {
+    gap: 16px;
+
+    .sicbo_row_one {
+      height: 80px;
+
+      .row_one_inner {
+        width: 112px;
+
+        .row_one_icon {
+          font-size: 24px;
+          line-height: 29px;
+        }
+
+        .row_one_text {
+          font-size: 16px;
+          line-height: 19px;
+        }
+
+        .row_one_dice {
+          .dice_inner {
+            .dice {
+              padding: 2px;
+              width: 16px;
+              height: 16px;
+            }
+
+            .dot {
+              width: 2px;
+              height: 2px;
+            }
+          }
+        }
+      }
+    }
+
+    .sicbo_row_second {
+      height: 56px;
+
+      .row_second_inner {
+        width: 56px;
+        padding: 3px;
+
+        .second_inner .dice {
+          // padding: 2px;
+          width: 20px;
+          height: 20px;
+
+          .dot {
+            width: 3px;
+            height: 3px;
+          }
+        }
+      }
+    }
+
+    .sicbo_row_third {
+      .row_third_inner {
+        height: 48px;
+
+        .sicbo_bet {
+          width: 48px;
+          font-size: 18px;
+        }
+      }
+    }
+
+    .sicbo_row_fourth {
+      height: 56px;
+
+      .row_fourth_inner {
+        width: 56px;
+
+        .dot {
+          width: 5px;
+          height: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 390px) and (min-height: 660px) {
+  .sicbobetting {
+    gap: 18px;
+
+    .sicbo_row_one {
+      height: 90px;
+
+      .row_one_inner {
+        width: 126px;
+
+        .row_one_icon {
+          font-size: 27px;
+          line-height: 33px;
+        }
+
+        .row_one_text {
+          font-size: 16px;
+          line-height: 19px;
+        }
+
+        .row_one_dice {
+          .dice_inner {
+            .dice {
+              padding: 2px;
+              width: 18px;
+              height: 18px;
+            }
+
+            .dot {
+              width: 3px;
+              height: 3px;
+            }
+          }
+        }
+      }
+    }
+
+    .sicbo_row_second {
+      height: 63px;
+
+      .row_second_inner {
+        width: 63px;
+        padding: 5px;
+
+        .second_inner .dice {
+          // padding: 3px;
+          width: 20px;
+          height: 20px;
+
+          .dot {
+            width: 3px;
+            height: 3px;
+          }
+        }
+      }
+    }
+
+    .sicbo_row_third {
+      .row_third_inner {
+        height: 54px;
+
+        .sicbo_bet {
+          width: 54px;
+          font-size: 20px;
+        }
+      }
+    }
+
+    .sicbo_row_fourth {
+      height: 63px;
+
+      .row_fourth_inner {
+        width: 63px;
+
+        .dot {
+          width: 6px;
+          height: 6px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 420px) and (min-height: 700px) {
+  .sicbobetting {
+    gap: 20px;
+
+    .sicbo_row_one {
+      height: 100px;
+
+      .row_one_inner {
+        width: 140px;
+
+        .row_one_icon {
+          font-size: 30px;
+          line-height: 36px;
+        }
+
+        .row_one_text {
+          font-size: 18px;
+          line-height: 22px;
+        }
+
+        .row_one_dice {
+          .dice_inner {
+            .dice {
+              padding: 3px;
+              width: 20px;
+              height: 20px;
+            }
+
+            .dot {
+              width: 3px;
+              height: 3px;
+            }
+          }
+        }
+      }
+    }
+
+    .sicbo_row_second {
+      height: 70px;
+
+      .row_second_inner {
+        width: 70px;
+        padding: 5px;
+
+        .second_inner .dice {
+          // padding: 3px;
+          width: 25px;
+          height: 25px;
+
+          .dot {
+            width: 4px;
+            height: 4px;
+          }
+        }
+      }
+    }
+
+    .sicbo_row_third {
+      .row_third_inner {
+        height: 60px;
+
+        .sicbo_bet {
+          width: 60px;
+          font-size: 22px;
+        }
+      }
+    }
+
+    .sicbo_row_fourth {
+      height: 70px;
+
+      .row_fourth_inner {
+        width: 70px;
+
+        .dot {
+          width: 6px;
+          height: 6px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 540px) and (min-height: 930px) {
+  .sicbobetting {
+    gap: 24px;
+
+    .sicbo_row_one {
+      height: 120px;
+
+      .row_one_inner {
+        width: 168px;
+
+        .row_one_icon {
+          font-size: 36px;
+          line-height: 44px;
+        }
+
+        .row_one_text {
+          font-size: 22px;
+          line-height: 26px;
+        }
+
+        .row_one_dice {
+          .dice_inner {
+            .dice {
+              padding: 3px;
+              width: 22px;
+              height: 22px;
+            }
+
+            .dot {
+              width: 4px;
+              height: 4px;
+            }
+          }
+        }
+      }
+    }
+
+    .sicbo_row_second {
+      height: 84px;
+
+      .row_second_inner {
+        width: 84px;
+        padding: 5px;
+
+        .second_inner .dice {
+          // padding: 3px;
+          width: 30px;
+          height: 30px;
+
+          .dot {
+            width: 4px;
+            height: 4px;
+          }
+        }
+      }
+    }
+
+    .sicbo_row_third {
+      .row_third_inner {
+        height: 72px;
+
+        .sicbo_bet {
+          width: 72px;
+          font-size: 24px;
+        }
+      }
+    }
+
+    .sicbo_row_fourth {
+      height: 84px;
+
+      .row_fourth_inner {
+        width: 84px;
+
+        .dot {
+          width: 8px;
+          height: 8px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 720px) and (min-height: 1240px) {
+  .sicbobetting {
+    gap: 32px;
+
+    .sicbo_row_one {
+      height: 160px;
+
+      .row_one_inner {
+        width: 224px;
+
+        .row_one_icon {
+          font-size: 48px;
+          line-height: 58px;
+        }
+
+        .row_one_text {
+          font-size: 26px;
+          line-height: 30px;
+        }
+
+        .row_one_dice {
+          .dice_inner {
+            .dice {
+              padding: 3px;
+              width: 25px;
+              height: 25px;
+            }
+
+            .dot {
+              width: 5px;
+              height: 5px;
+            }
+          }
+        }
+      }
+    }
+
+    .sicbo_row_second {
+      height: 112px;
+
+      .row_second_inner {
+        width: 112px;
+        padding: 5px;
+
+        .second_inner .dice {
+          // padding: 5px;
+          width: 40px;
+          height: 40px;
+
+          .dot {
+            width: 5px;
+            height: 5px;
+          }
+        }
+      }
+    }
+
+    .sicbo_row_third {
+      .row_third_inner {
+        height: 96px;
+
+        .sicbo_bet {
+          width: 96px;
+          font-size: 26px;
+        }
+      }
+    }
+
+    .sicbo_row_fourth {
+      height: 112px;
+
+      .row_fourth_inner {
+        width: 112px;
+
+        .dot {
+          width: 10px;
+          height: 10px;
+        }
+      }
+    }
+  }
+}
+
+.select_bet {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #d9d9d9;
+  border: 2px solid #666666;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  // line-height: 30px;
+  display: flex;
+  align-items: center;
+  border-radius: 100%;
+  justify-content: center;
+  text-align: center;
+  color: #000000;
+}
+
+.select_bet2 {
+  background: #d9d9d9 !important;
+  border: 2px solid #ff9900 !important;
+}
+
+.select_bet2_confirm {
+  background: #ff9900 !important;
+  border: 2px solid #d9d9d9 !important;
+}
+
+.sicbodice_div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

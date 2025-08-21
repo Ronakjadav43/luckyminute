@@ -1,0 +1,187 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    width: 360px;
+    height: 60px;
+    z-index: 100;
+    padding: 10px;
+
+    .back_btn {
+        font-size: 40px;
+        color: #fff;
+    }
+
+    .user_name {
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .game_info {
+        font-size: 40px;
+        color: #fff;
+    }
+}
+
+
+
+@media only screen and (min-width: 300px) and (min-height: 430px) {
+    .header {
+        width: 300px;
+        height: 54px;
+        padding: 10px;
+        margin-bottom: 9px;
+
+
+        .back_btn,
+        .game_info {
+            font-size: 34px;
+        }
+
+        .user_name {
+            font-size: 24px;
+            line-height: 29px;
+            display: none;
+        }
+    }
+}
+
+@media only screen and (min-width: 360px) and (min-height: 485px) {
+    .header {
+        width: 360px;
+        height: 60px;
+        padding: 10px;
+        margin-bottom: 10px;
+
+        .back_btn,
+        .game_info {
+            font-size: 40px;
+        }
+
+        .user_name {
+            font-size: 24px;
+            line-height: 29px;
+        }
+    }
+}
+
+
+
+
+@media only screen and (min-width: 300px) and (min-height: 550px) {
+    .header {
+        width: 300px;
+        height: 54px;
+        padding: 10px;
+        margin-bottom: unset;
+
+
+        .back_btn,
+        .game_info {
+            font-size: 34px;
+        }
+
+        .user_name {
+            font-size: 24px;
+            line-height: 29px;
+            display: flex;
+        }
+    }
+}
+
+@media only screen and (min-width: 360px) and (min-height: 620px) {
+    .header {
+        width: 360px;
+        height: 60px;
+        padding: 10px;
+
+        .back_btn,
+        .game_info {
+            font-size: 40px;
+        }
+
+        .user_name {
+            font-size: 24px;
+            line-height: 29px;
+        }
+    }
+}
+
+@media only screen and (min-width: 390px) and (min-height: 660px) {
+    .header {
+        width: 390px;
+        height: 60px;
+        padding: 10px;
+
+        .back_btn,
+        .game_info {
+            font-size: 42px;
+        }
+
+        .user_name {
+            font-size: 24px;
+            line-height: 29px;
+        }
+    }
+}
+
+@media only screen and (min-width: 420px) and (min-height: 700px) {
+    .header {
+        width: 420px;
+        height: 60px;
+        padding: 10px;
+
+        .back_btn,
+        .game_info {
+            font-size: 42px;
+        }
+
+        .user_name {
+            font-size: 24px;
+            line-height: 29px;
+        }
+    }
+}
+
+@media only screen and (min-width: 540px) and (min-height: 930px) {
+    .header {
+        width: 540px;
+        height: 90px;
+        padding: 15px;
+
+        .back_btn,
+        .game_info {
+            font-size: 60px;
+        }
+
+        .user_name {
+            font-size: 36px;
+            line-height: 44px;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 720px) and (min-height: 1240px) {
+    .header {
+        width: 720px;
+        height: 120px;
+        padding: 20px;
+
+        .back_btn,
+        .game_info {
+            font-size: 80px;
+        }
+
+        .user_name {
+            font-size: 48px;
+            line-height: 58px;
+        }
+    }
+}

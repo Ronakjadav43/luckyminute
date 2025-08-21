@@ -1,0 +1,650 @@
+.baccaratbetting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  .baccaratbetting_cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .cards_inner:nth-child(2) {
+      border-right: unset;
+    }
+
+    .cards_inner {
+      border-right: 1px solid #f4b400;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 168px;
+      height: 135px;
+
+      .card_text {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        gap: 10px;
+        font-family: "Inter";
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        color: #ff0000;
+
+        span:nth-child(1) {
+          width: 30px;
+          font-size: 50px;
+        }
+      }
+
+      .card_text1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        gap: 10px;
+        font-family: "Inter";
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        color: #e5e5e5;
+        span:nth-child(2) {
+          width: 30px;
+          font-size: 50px;
+        }
+      }
+
+      .card_wrep {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 3px;
+
+        .card {
+          width: 50px;
+          height: 70px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 5px;
+          background-color: #e5e5e5;
+          border-radius: 3px;
+          border: 1px solid #434343;
+
+          .cards_text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            gap: 10px;
+            color: #ff0000;
+            height: 50%;
+            // font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  .baccaratbetting_bets {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: 1px solid #f4b400;
+    border-top: unset;
+    background-color: #434343;
+    // margin-top: 18px;
+
+    .bets_inner:nth-child(2) {
+      border-left: 1px solid #f4b400;
+      border-right: 1px solid #f4b400;
+    }
+
+    .bets_inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 112px;
+      height: 112px;
+
+      .bets_text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 10px;
+        // color: #DB4437;
+        font-size: 18px;
+      }
+
+      .bets_text2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 10px;
+        color: #f4b400;
+        font-size: 18px;
+      }
+
+      .bets_text3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 10px;
+        color: #e5e5e5;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .baccaratbetting_bets2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    // height: 75px;
+    background-color: #434343;
+    border: 1px solid #f4b400;
+
+    .bets2_inner:nth-child(2) {
+      border-right: unset;
+    }
+
+    .bets2_inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 168px;
+      height: 100%;
+      border-right: 1px solid #f4b400;
+
+      .bets2_text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 10px;
+        // color: #DB4437;
+        font-size: 22px;
+      }
+
+      .banker_win_text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 10px;
+        // color: #DB4437;
+        font-size: 15px;
+      }
+
+      .bets2_text2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 10px;
+        color: #e5e5e5;
+        font-size: 22px;
+      }
+
+      .banker_win_text2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 10px;
+        color: #e5e5e5;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+// .select_bet {
+//     position: absolute;
+//     width: 50px;
+//     height: 50px;
+//     background: #D9D9D9;
+//     border: 2px solid #FF9900 !important;
+//     font-family: 'Inter';
+//     font-weight: 400;
+//     font-size: 22px;
+//     // line-height: 30px;
+//     // display: flex;
+//     display: none;
+//     align-items: center;
+//     border-radius: 100%;
+//     justify-content: center;
+//     text-align: center;
+//     color: #000000;
+// }
+
+// .select_bet2 {
+//     background: #D9D9D9 !important;
+//     border: 2px solid #FF9900 !important
+// }
+
+// .select_bet2_confirm {
+//     background: #FF9900 !important;
+//     border: 2px solid #D9D9D9 !important
+// }
+
+.red {
+  color: #ff0000;
+}
+
+.white {
+  color: #e5e5e5;
+}
+
+.yellow {
+  color: #ff9900;
+}
+
+@media only screen and (min-width: 300px) and (min-height: 550px) {
+  .baccaratbetting {
+    .baccaratbetting_cards {
+      .cards_inner {
+        width: 147px;
+        height: 126px;
+
+        .card_text,
+        .card_text1 {
+          font-size: 21px;
+          line-height: 25px;
+        }
+
+        .card_wrep {
+          .card {
+            width: 43px;
+            height: 61px;
+
+          
+
+            .cards_text {
+              font-size: 18px;
+              line-height: 22px;
+            }
+          }
+        }
+      }
+    }
+
+    .baccaratbetting_bets2 {
+      .bets2_inner {
+        width: 147px;
+        height: 70px;
+
+        .bets2_text,
+        .banker_win_text,
+        .bets2_text2,
+        .banker_win_text2 {
+          font-size: 17px;
+          line-height: 21px;
+        }
+      }
+    }
+
+    .baccaratbetting_bets {
+      .bets_inner {
+        width: 98px;
+        height: 98px;
+
+        .bets_text,
+        .bets_text2,
+        .bets_text3 {
+          font-size: 17px;
+          line-height: 21px;
+        }
+      }
+    }
+  }
+
+  .select_bet {
+    width: 42px;
+    height: 42px;
+    font-size: 17px;
+  }
+}
+
+@media only screen and (min-width: 360px) and (min-height: 620px) {
+  .baccaratbetting {
+    .baccaratbetting_cards {
+      .cards_inner {
+        width: 168px;
+        height: 144px;
+
+        .card_text,
+        .card_text1 {
+          font-size: 24px;
+          line-height: 29px;
+        }
+
+        .card_wrep {
+          .card {
+            width: 50px;
+            height: 70px;
+
+            .cards_text {
+              font-size: 20px;
+              line-height: 24px;
+            }
+          }
+        }
+      }
+    }
+
+    .baccaratbetting_bets2 {
+      .bets2_inner {
+        width: 168px;
+        height: 80px;
+
+        .bets2_text,
+        .banker_win_text,
+        .bets2_text2,
+        .banker_win_text2 {
+          font-size: 20px;
+          line-height: 24px;
+        }
+      }
+    }
+
+    .baccaratbetting_bets {
+      .bets_inner {
+        width: 112px;
+        height: 112px;
+
+        .bets_text,
+        .bets_text2,
+        .bets_text3 {
+          font-size: 20px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+
+  .select_bet {
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 390px) and (min-height: 660px) {
+  .baccaratbetting {
+    .baccaratbetting_cards {
+      .cards_inner {
+        width: 189px;
+        height: 162px;
+
+        .card_text,
+        .card_text1 {
+          font-size: 27px;
+          line-height: 33px;
+        }
+
+        .card_wrep {
+          .card {
+            width: 55px;
+            height: 78px;
+
+            .cards_text {
+              font-size: 22px;
+              line-height: 26px;
+            }
+          }
+        }
+      }
+    }
+
+    .baccaratbetting_bets2 {
+      .bets2_inner {
+        width: 189px;
+        height: 90px;
+
+        .bets2_text,
+        .banker_win_text,
+        .bets2_text2,
+        .banker_win_text2 {
+          font-size: 22px;
+          line-height: 27px;
+        }
+      }
+    }
+
+    .baccaratbetting_bets {
+      .bets_inner {
+        width: 126px;
+        height: 126px;
+
+        .bets_text,
+        .bets_text2,
+        .bets_text3 {
+          font-size: 22px;
+          line-height: 27px;
+        }
+      }
+    }
+  }
+
+  .select_bet {
+    width: 54px;
+    height: 54px;
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-width: 420px) and (min-height: 700px) {
+  .baccaratbetting {
+    .baccaratbetting_cards {
+      .cards_inner {
+        width: 210px;
+        height: 180px;
+
+        .card_text,
+        .card_text1 {
+          font-size: 30px;
+          line-height: 36px;
+        }
+
+        .card_wrep {
+          .card {
+            width: 62px;
+            height: 87px;
+
+            .cards_text {
+              font-size: 24px;
+              line-height: 29px;
+            }
+          }
+        }
+      }
+    }
+
+    .baccaratbetting_bets2 {
+      .bets2_inner {
+        width: 210px;
+        height: 100px;
+
+        .bets2_text,
+        .banker_win_text,
+        .bets2_text2,
+        .banker_win_text2 {
+          font-size: 25px;
+          line-height: 30px;
+        }
+      }
+    }
+
+    .baccaratbetting_bets {
+      .bets_inner {
+        width: 140px;
+        height: 140px;
+
+        .bets_text,
+        .bets_text2,
+        .bets_text3 {
+          font-size: 25px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+
+  .select_bet {
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 540px) and (min-height: 930px) {
+  .baccaratbetting {
+    .baccaratbetting_cards {
+      .cards_inner {
+        width: 252px;
+        height: 216px;
+
+        .card_text,
+        .card_text1 {
+          font-size: 36px;
+          line-height: 44px;
+        }
+
+        .card_wrep {
+          .card {
+            width: 75px;
+            height: 105px;
+
+            .cards_text {
+              font-size: 24px;
+              line-height: 29px;
+            }
+          }
+        }
+      }
+    }
+
+    .baccaratbetting_bets2 {
+      .bets2_inner {
+        width: 252px;
+        height: 120px;
+
+        .bets2_text,
+        .banker_win_text,
+        .bets2_text2,
+        .banker_win_text2 {
+          font-size: 30px;
+          line-height: 36px;
+        }
+      }
+    }
+
+    .baccaratbetting_bets {
+      .bets_inner {
+        width: 168px;
+        height: 168px;
+
+        .bets_text,
+        .bets_text2,
+        .bets_text3 {
+          font-size: 30px;
+          line-height: 36px;
+        }
+      }
+    }
+  }
+
+  .select_bet {
+    width: 72px;
+    height: 72px;
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 720px) and (min-height: 1240px) {
+  .baccaratbetting {
+    .baccaratbetting_cards {
+      .cards_inner {
+        width: 336px;
+        height: 288px;
+
+        .card_text,
+        .card_text1 {
+          font-size: 48px;
+          line-height: 58px;
+        }
+
+        .card_wrep {
+          .card {
+            width: 100px;
+            height: 140px;
+
+            .cards_text {
+              font-size: 24px;
+              line-height: 29px;
+            }
+          }
+        }
+      }
+    }
+
+    .baccaratbetting_bets2 {
+      .bets2_inner {
+        width: 336px;
+        height: 160px;
+
+        .bets2_text,
+        .banker_win_text,
+        .bets2_text2,
+        .banker_win_text2 {
+          font-size: 40px;
+          line-height: 48px;
+        }
+      }
+    }
+
+    .baccaratbetting_bets {
+      .bets_inner {
+        width: 224px;
+        height: 224px;
+
+        .bets_text,
+        .bets_text2,
+        .bets_text3 {
+          font-size: 40px;
+          line-height: 48px;
+        }
+      }
+    }
+  }
+
+  .select_bet {
+    width: 96px;
+    height: 96px;
+    font-size: 40px;
+  }
+}
+
+.all_card {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 5px;
+  width: 100%;
+}

@@ -1,0 +1,540 @@
+.report_layout {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px 10px;
+  gap: 30px;
+  position: relative;
+
+  .report_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    height: 30px;
+    background-color: #434343;
+
+    .report_header_text {
+      width: 50%;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      color: #f4b400;
+
+      &:nth-child(2) {
+        color: #ffffff;
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  .report_main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .report_inner {
+      display: flex;
+      flex-direction: column;
+
+      .enter_amount {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 10px;
+
+        .enter_amount_text {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #f4b400;
+        }
+
+        .enter_amount_text1 {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #000000;
+        }
+
+        // .enter_amount_box {
+        //   max-width: 280px;
+        //   width: 100%;
+        //   height: 50px;
+        //   background: #ffffff;
+        //   border: 1px solid #000000;
+        //   padding: 5px;
+        // }
+      }
+    }
+
+    .agent_info {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding: 0 10px;
+
+      .agent_name {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+        color: #f4b400;
+        width: 50%;
+        height: 30px;
+
+        &:nth-child(2) {
+          color: #000000;
+          display: flex;
+          justify-content: center;
+          text-align: center;
+        }
+      }
+    }
+
+    .border_1 {
+      border: 1px solid #000000;
+    }
+
+    .black {
+      color: #000000 !important;
+    }
+
+    .generated_text {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #f4b400;
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+}
+
+@media only screen and (min-width: 300px) and (min-height: 430px) {
+  .report_layout {
+    padding: 10px 10px;
+    height: calc(100% - 55px);
+    gap: 10px;
+
+    .report_header {
+      height: 30px;
+
+      .report_header_text {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+
+    .report_main {
+      gap: 10px;
+
+      .report_inner {
+        .enter_amount {
+
+          .enter_amount_text,
+          .enter_amount_text1 {
+            font-size: 14px;
+            line-height: 16px;
+          }
+
+          // .enter_amount_box {
+          //   max-width: 200px;
+          //   height: 30px;
+          // }
+        }
+      }
+
+      .agent_info {
+        margin-bottom: 5px;
+
+        .agent_name {
+          font-size: 14px;
+          line-height: 16px;
+          height: 20px;
+        }
+      }
+
+      .generated_text {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 360px) and (min-height: 485px) {
+  .report_layout {
+    padding: 10px 10px;
+    height: calc(100% - 55px);
+    gap: 10px;
+
+    .report_header {
+      height: 30px;
+
+      .report_header_text {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+
+    .report_main {
+      gap: 10px;
+
+      .report_inner {
+        .enter_amount {
+
+          .enter_amount_text,
+          .enter_amount_text1 {
+            font-size: 14px;
+            line-height: 16px;
+          }
+
+          // .enter_amount_box {
+          //   max-width: 250px;
+          //   height: 40px;
+          // }
+        }
+      }
+
+      .agent_info {
+        margin-bottom: 5px;
+
+        .agent_name {
+          font-size: 14px;
+          line-height: 16px;
+          height: 20px;
+        }
+      }
+
+      .generated_text {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 300px) and (min-height: 550px) {
+  .report_layout {
+    padding: 10px 10px;
+    height: calc(100% - 55px);
+
+    .report_header {
+      height: 30px;
+
+      .report_header_text {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+
+    .report_main {
+      gap: 10px;
+
+      .report_inner {
+        .enter_amount {
+
+          .enter_amount_text,
+          .enter_amount_text1 {
+            font-size: 14px;
+            line-height: 18px;
+          }
+
+          // .enter_amount_box {
+          //   max-width: 200px;
+          //   height: 40px;
+          // }
+        }
+      }
+
+      .agent_info {
+        margin-bottom: 5px;
+
+        .agent_name {
+          font-size: 14px;
+          line-height: 18px;
+          height: 30px;
+        }
+      }
+
+      .generated_text {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 360px) and (min-height: 620px) {
+  .report_layout {
+    padding: 10px 10px;
+    height: calc(100% - 55px);
+
+    .report_header {
+      height: 30px;
+
+      .report_header_text {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+
+    .report_main {
+      gap: 20px;
+
+      .report_inner {
+        .enter_amount {
+
+          .enter_amount_text,
+          .enter_amount_text1 {
+            font-size: 16px;
+            line-height: 20px;
+          }
+
+          // .enter_amount_box {
+          //   max-width: 250px;
+          //   height: 50px;
+          // }
+        }
+      }
+
+      .agent_info {
+        margin-bottom: 10px;
+
+        .agent_name {
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+
+      .generated_text {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 390px) and (min-height: 660px) {
+  .report_layout {
+    padding: 10px 20px;
+    height: calc(100% - 60px);
+
+    .report_header {
+      height: 30px;
+
+      .report_header_text {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+
+    .report_main {
+      gap: 30px;
+
+      .report_inner {
+        .enter_amount {
+
+          .enter_amount_text,
+          .enter_amount_text1 {
+            font-size: 16px;
+            line-height: 20px;
+          }
+
+          // .enter_amount_box {
+          //   max-width: 250px;
+          //   height: 50px;
+          // }
+        }
+      }
+
+      .agent_info {
+        margin-bottom: 10px;
+
+        .agent_name {
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+
+      .generated_text {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 420px) and (min-height: 700px) {
+  .report_layout {
+    padding: 10px 20px;
+    height: calc(100% - 70px);
+
+    .report_header {
+      height: 30px;
+
+      .report_header_text {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+
+    .report_main {
+      gap: 30px;
+
+      .report_inner {
+        .enter_amount {
+
+          .enter_amount_text,
+          .enter_amount_text1 {
+            font-size: 16px;
+            line-height: 20px;
+          }
+
+          // .enter_amount_box {
+          //   max-width: 250px;
+          //   height: 50px;
+          // }
+        }
+      }
+
+      .agent_info {
+        margin-bottom: 10px;
+
+        .agent_name {
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+
+      .generated_text {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 540px) and (min-height: 930px) {
+  .report_layout {
+    padding: 10px 20px;
+    height: calc(100% - 80px);
+
+    .report_header {
+      height: 40px;
+
+      .report_header_text {
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+
+    .report_main {
+      gap: 30px;
+
+      .report_inner {
+        .enter_amount {
+
+          .enter_amount_text,
+          .enter_amount_text1 {
+            font-size: 18px;
+            line-height: 22px;
+          }
+
+          // .enter_amount_box {
+          //   max-width: 350px;
+          //   height: 50px;
+          // }
+        }
+      }
+
+      .agent_info {
+        margin-bottom: 10px;
+
+        .agent_name {
+          font-size: 18px;
+          line-height: 22px;
+        }
+      }
+
+      .generated_text {
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 720px) and (min-height: 1240px) {
+  .report_layout {
+    padding: 10px 20px;
+    height: calc(100% - 110px);
+
+    .report_header {
+      height: 50px;
+
+      .report_header_text {
+        font-size: 22px;
+        line-height: 26px;
+      }
+    }
+
+    .report_main {
+      gap: 30px;
+
+      .report_inner {
+        .enter_amount {
+
+          .enter_amount_text,
+          .enter_amount_text1 {
+            font-size: 22px;
+            line-height: 26px;
+          }
+
+          // .enter_amount_box {
+          //   max-width: 480px;
+          //   height: 50px;
+          // }
+        }
+      }
+
+      .agent_info {
+        margin-bottom: 10px;
+
+        .agent_name {
+          font-size: 22px;
+          line-height: 26px;
+        }
+      }
+
+      .generated_text {
+        font-size: 22px;
+        line-height: 26px;
+      }
+    }
+  }
+}

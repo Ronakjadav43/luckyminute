@@ -1,0 +1,606 @@
+.agent_home {
+  .header {
+    justify-content: center !important;
+
+    .back_btn,
+    .game_info {
+      display: none;
+    }
+  }
+}
+
+// .agent-dashboard {
+//   display: flex;
+//   flex-direction: column;
+//   padding: 10px 20px;
+//   height: calc(100% - 60px);
+
+//   .agent_info {
+//     display: flex;
+//     align-items: center;
+//     width: 100%;
+//     margin-bottom: 5px;
+
+//     .agent_name {
+//       font-family: "Inter";
+//       font-style: normal;
+//       font-weight: 400;
+//       font-size: 16px;
+//       line-height: 19px;
+//       display: flex;
+//       align-items: center;
+//       color: #f4b400;
+//       width: 50%;
+//       height: 40px;
+
+//       &:nth-child(2) {
+//         color: #000000;
+//         display: flex;
+//         justify-content: center;
+//         text-align: center;
+//       }
+//     }
+//   }
+
+//   .agent_game_info {
+//     display: flex;
+//     align-items: center;
+//     width: 100%;
+//     gap: 20px;
+
+//     &:nth-child(2) {
+//       margin-top: 10px;
+//     }
+
+//     .agent_info_btn {
+//       width: 50%;
+//       height: 50px;
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//       justify-content: space-around;
+//       background: #434343;
+
+//       .btn_text {
+//         font-family: "Inter";
+//         font-style: normal;
+//         font-weight: 400;
+//         font-size: 16px;
+//         line-height: 19px;
+//         display: flex;
+//         align-items: center;
+//         text-align: center;
+//         color: #f4b400;
+
+//         &:nth-child(2) {
+//           color: #ffffff;
+//         }
+//       }
+//     }
+//   }
+
+
+//   .agent_setting_main {
+//     margin-top: 155px;
+//     gap: 20px;
+//     display: flex;
+//     flex-direction: column;
+
+//     .agent_game_setting {
+//       display: flex;
+//       align-items: center;
+//       width: 100%;
+//       gap: 20px;
+
+
+//       .agent_info_btn {
+//         width: 50%;
+//         height: 60px;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         justify-content: space-around;
+//         background: #434343;
+
+//         i {
+//           font-size: 35px;
+//           font-weight: 600;
+//           color: #fff;
+//         }
+
+//         .btn_text {
+//           font-family: "Inter";
+//           font-style: normal;
+//           font-weight: 400;
+//           font-size: 12px;
+//           line-height: 15px;
+//           display: flex;
+//           align-items: center;
+//           text-align: center;
+//           color: #f4b400;
+//         }
+//       }
+//     }
+//   }
+
+//   .mt_10 {
+//     margin-top: 10px;
+//   }
+// }
+
+// @media only screen and (min-width: 300px) and (min-height: 430px) {
+//   .agent-dashboard {
+//     padding: 10px 10px;
+//     height: calc(100% - 55px);
+
+//     .agent_info {
+//       margin-bottom: 5px;
+
+//       .agent_name {
+//         font-size: 14px;
+//         line-height: 16px;
+//         height: 30px;
+//       }
+//     }
+
+//     .agent_game_info {
+//       gap: 10px;
+
+//       &:nth-child(2) {
+//         margin-top: 10px;
+//       }
+
+//       .agent_info_btn {
+//         height: 50px;
+
+//         .btn_text {
+//           font-size: 12px;
+//           line-height: 14px;
+//         }
+//       }
+//     }
+
+
+//     .agent_setting_main {
+//       margin-top: 10px;
+//       gap: 10px;
+
+//       .agent_game_setting {
+//         gap: 10px;
+
+
+//         .agent_info_btn {
+//           height: 50px;
+
+//           i {
+//             font-size: 25px;
+//           }
+
+//           .btn_text {
+//             font-size: 10px;
+//             line-height: 14px;
+//           }
+//         }
+//       }
+//     }
+
+//     .mt_10 {
+//       margin-top: 10px;
+//     }
+//   }
+// }
+
+// @media only screen and (min-width: 360px) and (min-height: 485px) {
+//   .agent-dashboard {
+//     padding: 10px 10px;
+//     height: calc(100% - 55px);
+
+//     .agent_info {
+//       margin-bottom: 5px;
+
+//       .agent_name {
+//         font-size: 14px;
+//         line-height: 16px;
+//         height: 40px;
+//       }
+//     }
+
+//     .agent_game_info {
+//       gap: 10px;
+
+//       &:nth-child(2) {
+//         margin-top: 10px;
+//       }
+
+//       .agent_info_btn {
+//         height: 50px;
+
+//         .btn_text {
+//           font-size: 12px;
+//           line-height: 14px;
+//         }
+//       }
+//     }
+
+//     .agent_setting_main {
+//       margin-top: 30px;
+//       gap: 20px;
+
+//       .agent_game_setting {
+//         gap: 10px;
+
+
+//         .agent_info_btn {
+//           height: 50px;
+
+//           i {
+//             font-size: 25px;
+//           }
+
+//           .btn_text {
+//             font-size: 10px;
+//             line-height: 14px;
+//           }
+//         }
+//       }
+//     }
+
+//     .mt_10 {
+//       margin-top: 10px;
+//     }
+//   }
+// }
+
+// @media only screen and (min-width: 300px) and (min-height: 550px) {
+//   .agent-dashboard {
+//     padding: 10px 10px;
+//     height: calc(100% - 55px);
+
+//     .agent_info {
+//       margin-bottom: 5px;
+
+//       .agent_name {
+//         font-size: 14px;
+//         line-height: 18px;
+//       }
+//     }
+
+//     .agent_game_info {
+//       gap: 20px;
+
+//       &:nth-child(2) {
+//         margin-top: 10px;
+//       }
+
+//       .agent_info_btn {
+//         height: 60px;
+
+//         .btn_text {
+//           font-size: 14px;
+//           line-height: 18px;
+//         }
+//       }
+//     }
+
+//     .agent_setting_main {
+//       margin-top: 60px;
+
+//       .agent_game_setting {
+//         gap: 20px;
+
+
+//         .agent_info_btn {
+//           height: 60px;
+
+//           i {
+//             font-size: 35px;
+//           }
+
+//           .btn_text {
+//             font-size: 10px;
+//             line-height: 14px;
+//           }
+//         }
+//       }
+//     }
+
+//     .mt_10 {
+//       margin-top: 10px;
+//     }
+//   }
+// }
+
+// @media only screen and (min-width: 360px) and (min-height: 620px) {
+//   .agent-dashboard {
+//     padding: 10px 10px;
+//     height: calc(100% - 55px);
+
+//     .agent_info {
+//       margin-bottom: 10px;
+
+//       .agent_name {
+//         font-size: 16px;
+//         line-height: 20px;
+//       }
+//     }
+
+//     .agent_game_info {
+//       gap: 20px;
+
+//       &:nth-child(2) {
+//         margin-top: 10px;
+//       }
+
+//       .agent_info_btn {
+//         height: 60px;
+
+//         .btn_text {
+//           font-size: 16px;
+//           line-height: 20px;
+//         }
+//       }
+//     }
+
+
+//     .agent_setting_main {
+//       margin-top: 100px;
+
+//       .agent_game_setting {
+//         gap: 20px;
+
+
+//         .agent_info_btn {
+//           height: 60px;
+
+//           i {
+//             font-size: 35px;
+//           }
+
+//           .btn_text {
+//             font-size: 12px;
+//             line-height: 16px;
+//           }
+//         }
+//       }
+//     }
+
+//     .mt_10 {
+//       margin-top: 10px;
+//     }
+//   }
+// }
+
+// @media only screen and (min-width: 390px) and (min-height: 660px) {
+//   .agent-dashboard {
+//     padding: 10px 20px;
+//     height: calc(100% - 60px);
+
+//     .agent_info {
+//       margin-bottom: 10px;
+
+//       .agent_name {
+//         font-size: 16px;
+//         line-height: 20px;
+//       }
+//     }
+
+//     .agent_game_info {
+//       gap: 20px;
+
+//       &:nth-child(2) {
+//         margin-top: 10px;
+//       }
+
+//       .agent_info_btn {
+//         height: 60px;
+
+//         .btn_text {
+//           font-size: 16px;
+//           line-height: 20px;
+//         }
+//       }
+//     }
+
+//     .agent_setting_main {
+//       margin-top: 120px;
+
+//       .agent_game_setting {
+//         gap: 20px;
+
+
+//         .agent_info_btn {
+//           height: 60px;
+
+//           i {
+//             font-size: 35px;
+//           }
+
+//           .btn_text {
+//             font-size: 12px;
+//             line-height: 16px;
+//           }
+//         }
+//       }
+//     }
+
+//     .mt_10 {
+//       margin-top: 10px;
+//     }
+//   }
+// }
+
+// @media only screen and (min-width: 420px) and (min-height: 700px) {
+//   .agent-dashboard {
+//     padding: 10px 20px;
+//     height: calc(100% - 70px);
+
+//     .agent_info {
+//       margin-bottom: 10px;
+
+//       .agent_name {
+//         font-size: 16px;
+//         line-height: 20px;
+//       }
+//     }
+
+//     .agent_game_info {
+//       gap: 20px;
+
+//       &:nth-child(2) {
+//         margin-top: 10px;
+//       }
+
+//       .agent_info_btn {
+//         height: 60px;
+
+//         .btn_text {
+//           font-size: 16px;
+//           line-height: 20px;
+//         }
+//       }
+//     }
+
+//     .agent_setting_main {
+//       margin-top: 155px;
+
+//       .agent_game_setting {
+//         gap: 20px;
+
+
+//         .agent_info_btn {
+//           height: 60px;
+
+//           i {
+//             font-size: 35px;
+//           }
+
+//           .btn_text {
+//             font-size: 14px;
+//             line-height: 18px;
+//           }
+//         }
+//       }
+//     }
+
+//     .mt_10 {
+//       margin-top: 10px;
+//     }
+//   }
+// }
+
+// @media only screen and (min-width: 540px) and (min-height: 930px) {
+//   .agent-dashboard {
+//     padding: 10px 20px;
+//     height: calc(100% - 80px);
+
+//     .agent_info {
+//       margin-bottom: 10px;
+
+//       .agent_name {
+//         font-size: 18px;
+//         line-height: 22px;
+//       }
+//     }
+
+//     .agent_game_info {
+//       gap: 30px;
+
+//       &:nth-child(2) {
+//         margin-top: 15px;
+//       }
+
+//       .agent_info_btn {
+//         height: 70px;
+
+//         .btn_text {
+//           font-size: 18px;
+//           line-height: 22px;
+//         }
+//       }
+//     }
+
+//     .agent_setting_main {
+//       margin-top: 155px;
+
+//       .agent_game_setting {
+//         gap: 30px;
+
+//         .agent_info_btn {
+//           height: 70px;
+
+//           i {
+//             font-size: 35px;
+//           }
+
+//           .btn_text {
+//             font-size: 16px;
+//             line-height: 20px;
+//           }
+//         }
+//       }
+//     }
+
+//     .mt_10 {
+//       margin-top: 10px;
+//     }
+//   }
+// }
+
+// @media only screen and (min-width: 720px) and (min-height: 1240px) {
+//   .agent-dashboard {
+//     padding: 10px 20px;
+//     height: calc(100% - 110px);
+
+//     .agent_info {
+//       margin-bottom: 10px;
+
+//       .agent_name {
+//         font-size: 22px;
+//         line-height: 26px;
+//       }
+//     }
+
+//     .agent_game_info {
+//       gap: 40px;
+
+//       &:nth-child(2) {
+//         margin-top: 20px;
+//       }
+
+//       .agent_info_btn {
+//         height: 80px;
+
+//         .btn_text {
+//           font-size: 22px;
+//           line-height: 26px;
+//         }
+//       }
+//     }
+
+//     .agent_setting_main {
+//       margin-top: 155px;
+
+//       .agent_game_setting {
+//         gap: 40px;
+
+
+//         .agent_info_btn {
+//           height: 80px;
+
+//           i {
+//             font-size: 35px;
+//           }
+
+//           .btn_text {
+//             font-size: 20px;
+//             line-height: 24px;
+//           }
+//         }
+//       }
+//     }
+
+//     .mt_10 {
+//       margin-top: 20px;
+//     }
+//   }
+// }

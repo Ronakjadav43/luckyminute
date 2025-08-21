@@ -1,0 +1,261 @@
+.game_winners_list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+
+    .header_background {
+        background: #434343;
+    }
+
+    .winners_list_inner {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 10px;
+
+
+
+        .players_name {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40%;
+            min-width: 120px;
+
+            .player_text,
+            .amount_text {
+                color: #FF9900;
+                font-size: 18px;
+            }
+        }
+
+        .players_amount {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 15%;
+            min-width: 40px;
+
+            .player_text,
+            .amount_text {
+                color: #FF9900;
+                font-size: 12px;
+                text-align: center;
+            }
+        }
+    }
+
+    .winners_list_main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        // height: 100%;
+        overflow: auto;
+
+        .winners_list_inner {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 10px;
+
+            .players_name {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40%;
+                min-width: 120px;
+
+                .player,
+                .amount {
+                    color: #fff;
+                    font-size: 18px;
+                }
+            }
+
+            .players_amount {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 15%;
+                min-width: 40px;
+
+                .player,
+                .amount {
+                    color: #fff;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+
+
+
+}
+
+
+@media only screen and (min-width: 300px) and (min-height: 430px) {
+    .game_winners_list {
+        .winners_list_inner {
+            .players_name {
+
+                .player_text,
+                .amount_text {
+                    font-size: 12px;
+                }
+            }
+
+            .players_amount {
+
+                .player_text,
+                .amount_text {
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .winners_list_main {
+            height: 242px;
+
+            .winners_list_inner {
+                .players_name {
+
+                    .player,
+                    .amount {
+                        font-size: 12px;
+                    }
+                }
+
+                .players_amount {
+
+                    .player,
+                    .amount {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 360px) and (min-height: 485px) {
+    .game_winners_list .winners_list_main {
+        height: 282px;
+    }
+}
+
+
+@media only screen and (min-width: 300px) and (min-height: 550px) {
+    .game_winners_list {
+        .winners_list_inner {
+            .players_name {
+
+                .player_text,
+                .amount_text {
+                    font-size: 12px;
+                }
+            }
+
+            .players_amount {
+
+                .player_text,
+                .amount_text {
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .winners_list_main {
+            height: 254px;
+
+            .winners_list_inner {
+                .players_name {
+
+                    .player,
+                    .amount {
+                        font-size: 12px;
+                    }
+                }
+
+                .players_amount {
+
+                    .player,
+                    .amount {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 360px) and (min-height: 620px) {
+    .game_winners_list .winners_list_main {
+        height: 294px;
+    }
+}
+
+@media only screen and (min-width: 390px) and (min-height: 660px) {
+    .game_winners_list .winners_list_main {
+        height: 333px;
+    }
+
+}
+
+@media only screen and (min-width: 420px) and (min-height: 700px) {
+    .game_winners_list {
+        .winners_list_inner {
+            .players_name {
+
+                .player_text,
+                .amount_text {
+                    font-size: 14px;
+                }
+            }
+
+            .players_amount {
+
+                .player_text,
+                .amount_text {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .winners_list_main {
+            height: 367px;
+
+            .winners_list_inner {
+                .players_name {
+
+                    .player,
+                    .amount {
+                        font-size: 14px;
+                    }
+                }
+
+                .players_amount {
+
+                    .player,
+                    .amount {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 540px) and (min-height: 930px) {
+    .game_winners_list .winners_list_main {
+        height: 458px;
+    }
+}
+
+@media only screen and (min-width: 720px) and (min-height: 1240px) {
+    .game_winners_list .winners_list_main {
+        height: 625px;
+    }
+}

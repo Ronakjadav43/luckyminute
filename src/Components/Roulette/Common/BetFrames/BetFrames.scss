@@ -1,0 +1,553 @@
+.game_bet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  .game_bet_two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .bet_two_box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 130px;
+      height: 56px;
+      min-height: 50px;
+      background: #434343;
+      border: 1px solid #ff9900;
+      font-family: "Inter";
+      font-weight: 400;
+      font-size: 16px;
+      text-align: center;
+      color: #ff9900;
+      position: relative;
+
+      .select_bet {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background: #d9d9d9;
+        border: 2px solid #666666;
+        font-family: "Inter";
+        font-weight: 400;
+        font-size: 16px;
+        // line-height: 30px;
+        display: flex;
+        align-items: center;
+        border-radius: 100%;
+        justify-content: center;
+        text-align: center;
+        color: #000000;
+      }
+
+      .select_bet2 {
+        background: #d9d9d9 !important;
+        border: 2px solid #ff9900 !important;
+      }
+
+      .select_bet2_confirm {
+        background: #ff9900 !important;
+        border: 2px solid #d9d9d9 !important;
+      }
+
+      .select_bet2_winner {
+        background: #09ff00 !important;
+        border: 2px solid #d9d9d9 !important;
+      }
+    }
+
+    .bet_two_box2 {
+      background: #000000 !important;
+      border: 1px solid #FF9900 !important;
+    }
+
+    .bet_two_box1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      height: 56px;
+      background: #434343;
+      border: 1px solid #ff9900;
+      font-family: "Inter";
+      font-weight: 400;
+      font-size: 16px;
+      color: #0f9d58;
+      margin: 30px 10px;
+      position: relative;
+
+      .select_bet {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background: #d9d9d9;
+        border: 2px solid #666666;
+        font-family: "Inter";
+        font-weight: 400;
+        font-size: 16px;
+        // line-height: 30px;
+        display: flex;
+        align-items: center;
+        border-radius: 100%;
+        justify-content: center;
+        text-align: center;
+        color: #000000;
+      }
+
+      .select_bet2 {
+        background: #d9d9d9 !important;
+        border: 2px solid #ff9900 !important;
+      }
+
+      .select_bet2_confirm {
+        background: #ff9900 !important;
+        border: 2px solid #d9d9d9 !important;
+      }
+    }
+  }
+
+  .game_bet_three {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .bet_three_box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 84px;
+      height: 56px;
+      min-height: 50px;
+      background: #434343;
+      border: 1px solid #ff9900;
+      font-family: "Inter";
+      font-weight: 400;
+      font-size: 16px;
+      text-align: center;
+      color: #ff9900;
+      position: relative;
+
+      .select_bet {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background: #d9d9d9;
+        border: 2px solid #666666;
+        font-family: "Inter";
+        font-weight: 400;
+        font-size: 16px;
+        // line-height: 30px;
+        display: flex;
+        align-items: center;
+        border-radius: 100%;
+        justify-content: center;
+        text-align: center;
+        color: #000000;
+      }
+
+      .select_bet2 {
+        background: #d9d9d9 !important;
+        border: 2px solid #ff9900 !important;
+      }
+
+      .select_bet2_confirm {
+        background: #ff9900 !important;
+        border: 2px solid #d9d9d9 !important;
+      }
+
+      .select_bet2_winner {
+        background: #09ff00 !important;
+        border: 2px solid #d9d9d9 !important;
+      }
+
+      img {
+        width: 80%;
+        height: 80%;
+        display: block;
+      }
+    }
+
+    .bet_three_box1 {
+      background: #000000 !important;
+      border: 1px solid #FF9900 !important;
+    }
+  }
+}
+
+.game_bet_main .red {
+  color: #ff0101;
+}
+
+.game_bet_main .white {
+  color: #e5e5e5;
+}
+
+// .select_bet {
+//     display: none !important;
+// }
+
+@media only screen and (min-width: 300px) and (min-height: 430px) {
+  .game_bet {
+    .game_bet_two {
+      .bet_two_box {
+        width: 113px;
+        height: 49px;
+        font-size: 16px;
+
+        .select_bet {
+          width: 42px;
+          height: 42px;
+          font-size: 14px;
+        }
+      }
+
+      .bet_two_box1 {
+        width: 49px;
+        height: 49px;
+        font-size: 16px;
+        margin: 24px 9px;
+
+        .select_bet {
+          width: 42px;
+          height: 42px;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .game_bet_three {
+      .bet_three_box {
+        width: 73.5px;
+        height: 49px;
+        font-size: 16px;
+
+        .select_bet {
+          width: 42px;
+          height: 42px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 360px) and (min-height: 485px) {
+  .game_bet {
+    .game_bet_two {
+      .bet_two_box {
+        width: 130px;
+        height: 56px;
+        font-size: 20px;
+
+        .select_bet {
+          width: 48px;
+          height: 48px;
+          font-size: 16px;
+        }
+      }
+
+      .bet_two_box1 {
+        width: 56px;
+        height: 56px;
+        font-size: 20px;
+        margin: 28px 10px;
+
+        .select_bet {
+          width: 48px;
+          height: 48px;
+          font-size: 16px;
+        }
+      }
+    }
+
+    .game_bet_three {
+      .bet_three_box {
+        width: 84px;
+        height: 56px;
+        font-size: 20px;
+
+        .select_bet {
+          width: 48px;
+          height: 48px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 300px) and (min-height: 550px) {
+  .game_bet {
+    .game_bet_two {
+      .bet_two_box {
+        width: 113px;
+        height: 49px;
+        font-size: 16px;
+
+        .select_bet {
+          width: 42px;
+          height: 42px;
+          font-size: 14px;
+        }
+      }
+
+      .bet_two_box1 {
+        width: 49px;
+        height: 49px;
+        font-size: 16px;
+        margin: 24px 9px;
+
+        .select_bet {
+          width: 42px;
+          height: 42px;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .game_bet_three {
+      .bet_three_box {
+        width: 73.5px;
+        height: 49px;
+        font-size: 16px;
+
+        .select_bet {
+          width: 42px;
+          height: 42px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 360px) and (min-height: 620px) {
+  .game_bet {
+    .game_bet_two {
+      .bet_two_box {
+        width: 130px;
+        height: 56px;
+        font-size: 20px;
+
+        .select_bet {
+          width: 48px;
+          height: 48px;
+          font-size: 16px;
+        }
+      }
+
+      .bet_two_box1 {
+        width: 56px;
+        height: 56px;
+        font-size: 20px;
+        margin: 28px 10px;
+
+        .select_bet {
+          width: 48px;
+          height: 48px;
+          font-size: 16px;
+        }
+      }
+    }
+
+    .game_bet_three {
+      .bet_three_box {
+        width: 84px;
+        height: 56px;
+        font-size: 20px;
+
+        .select_bet {
+          width: 48px;
+          height: 48px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 390px) and (min-height: 660px) {
+  .game_bet {
+    .game_bet_two {
+      .bet_two_box {
+        width: 146px;
+        height: 63px;
+        font-size: 24px;
+
+        .select_bet {
+          width: 54px;
+          height: 54px;
+          font-size: 18px;
+        }
+      }
+
+      .bet_two_box1 {
+        width: 63px;
+        height: 63px;
+        font-size: 24px;
+        margin: 31px 11.5px;
+
+        .select_bet {
+          width: 54px;
+          height: 54px;
+          font-size: 18px;
+        }
+      }
+    }
+
+    .game_bet_three {
+      .bet_three_box {
+        width: 94.5px;
+        height: 63px;
+        font-size: 24px;
+
+        .select_bet {
+          width: 54px;
+          height: 54px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 420px) and (min-height: 700px) {
+  .game_bet {
+    .game_bet_two {
+      .bet_two_box {
+        width: 160px;
+        height: 70px;
+        font-size: 28px;
+
+        .select_bet {
+          width: 60px;
+          height: 60px;
+          font-size: 20px;
+        }
+      }
+
+      .bet_two_box1 {
+        width: 70px;
+        height: 70px;
+        font-size: 28px;
+        margin: 35px 15px;
+
+        .select_bet {
+          width: 60px;
+          height: 60px;
+          font-size: 20px;
+        }
+      }
+    }
+
+    .game_bet_three {
+      .bet_three_box {
+        width: 105px;
+        height: 70px;
+        font-size: 28px;
+
+        .select_bet {
+          width: 60px;
+          height: 60px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 540px) and (min-height: 930px) {
+  .game_bet {
+    .game_bet_two {
+      .bet_two_box {
+        width: 192px;
+        height: 84px;
+        font-size: 32px;
+
+        .select_bet {
+          width: 72px;
+          height: 72px;
+          font-size: 26px;
+        }
+      }
+
+      .bet_two_box1 {
+        width: 84px;
+        height: 84px;
+        font-size: 32px;
+        margin: 42px 18px;
+
+        .select_bet {
+          width: 72px;
+          height: 72px;
+          font-size: 26px;
+        }
+      }
+    }
+
+    .game_bet_three {
+      .bet_three_box {
+        width: 126px;
+        height: 84px;
+        font-size: 32px;
+
+        .select_bet {
+          width: 72px;
+          height: 72px;
+          font-size: 26px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 720px) and (min-height: 1240px) {
+  .game_bet {
+    .game_bet_two {
+      .bet_two_box {
+        width: 256px;
+        height: 112px;
+        font-size: 36px;
+
+        .select_bet {
+          width: 96px;
+          height: 96px;
+          font-size: 32px;
+        }
+      }
+
+      .bet_two_box1 {
+        width: 112px;
+        height: 112px;
+        font-size: 36px;
+        margin: 56px 24px;
+
+        .select_bet {
+          width: 96px;
+          height: 96px;
+          font-size: 32px;
+        }
+      }
+    }
+
+    .game_bet_three {
+      .bet_three_box {
+        width: 168px;
+        height: 112px;
+        font-size: 36px;
+
+        .select_bet {
+          width: 96px;
+          height: 96px;
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}

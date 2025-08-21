@@ -1,0 +1,480 @@
+.agent_transaction {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px 20px;
+  gap: 10px;
+
+  .transaction_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    height: 30px;
+    background-color: #434343;
+
+    .transaction_header_text {
+      width: 50%;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      color: #f4b400;
+
+      &:nth-child(2) {
+        color: #ffffff;
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  .transaction_header_table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .header_table_text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 25%;
+      height: 30px;
+      font-family: "Inter";
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #f4b400;
+    }
+  }
+
+  .transaction_body_table {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+
+    .body_table_inner {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      .date_text {
+        font-family: "Inter";
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 30px;
+        color: #f4b400;
+      }
+
+      .transaction_lists {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+
+        .transaction_lists_inner {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+
+          .transaction_list_text {
+            font-family: "Inter";
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            color: #000000;
+            width: 25%;
+            height: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 300px) and (min-height: 430px) {
+  .agent_transaction {
+    padding: 10px 10px;
+    height: calc(100% - 55px);
+
+    .transaction_header {
+      height: 30px;
+
+      .transaction_header_text {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+
+    .transaction_header_table {
+      .header_table_text {
+        height: 30px;
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+
+    .transaction_body_table {
+      overflow: auto;
+      height: 230px;
+      .body_table_inner {
+        .date_text {
+          font-size: 14px;
+          line-height: 18px;
+          height: 30px;
+        }
+
+        .transaction_lists {
+          .transaction_lists_inner {
+            .transaction_list_text {
+              font-size: 14px;
+              line-height: 18px;
+              height: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 360px) and (min-height: 485px) {
+  .agent_transaction {
+    padding: 10px 10px;
+    height: calc(100% - 55px);
+
+    .transaction_header {
+      height: 30px;
+
+      .transaction_header_text {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+
+    .transaction_header_table {
+      .header_table_text {
+        height: 30px;
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+
+    .transaction_body_table {
+      overflow: auto;
+      height: 285px;
+      .body_table_inner {
+        .date_text {
+          font-size: 14px;
+          line-height: 18px;
+          height: 30px;
+        }
+
+        .transaction_lists {
+          .transaction_lists_inner {
+            .transaction_list_text {
+              font-size: 14px;
+              line-height: 18px;
+              height: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 300px) and (min-height: 550px) {
+  .agent_transaction {
+    padding: 10px 10px;
+    height: calc(100% - 55px);
+
+    .transaction_header {
+      height: 30px;
+
+      .transaction_header_text {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+
+    .transaction_header_table {
+      .header_table_text {
+        min-height: 40px;
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+
+    .transaction_body_table {
+      overflow: auto;
+      height: 340px;
+      .body_table_inner {
+        .date_text {
+          font-size: 14px;
+          line-height: 18px;
+          min-height: 40px;
+        }
+
+        .transaction_lists {
+          .transaction_lists_inner {
+            .transaction_list_text {
+              font-size: 14px;
+              line-height: 18px;
+              min-height: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 360px) and (min-height: 620px) {
+  .agent_transaction {
+    padding: 10px 10px;
+    height: calc(100% - 55px);
+
+    .transaction_header {
+      height: 30px;
+
+      .transaction_header_text {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+
+    .transaction_header_table {
+      .header_table_text {
+        min-height: 40px;
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+
+    .transaction_body_table {
+      overflow: auto;
+      height: 400px;
+      .body_table_inner {
+        .date_text {
+          font-size: 16px;
+          line-height: 20px;
+          min-height: 40px;
+        }
+
+        .transaction_lists {
+          .transaction_lists_inner {
+            .transaction_list_text {
+              font-size: 16px;
+              line-height: 20px;
+              min-height: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 390px) and (min-height: 660px) {
+  .agent_transaction {
+    padding: 10px 20px;
+    height: calc(100% - 60px);
+
+    .transaction_header {
+      height: 30px;
+
+      .transaction_header_text {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+
+    .transaction_header_table {
+      .header_table_text {
+        min-height: 40px;
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+
+    .transaction_body_table {
+      overflow: auto;
+      height: 440px;
+      .body_table_inner {
+        .date_text {
+          font-size: 16px;
+          line-height: 20px;
+          min-height: 40px;
+        }
+
+        .transaction_lists {
+          .transaction_lists_inner {
+            .transaction_list_text {
+              font-size: 16px;
+              line-height: 20px;
+              min-height: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 420px) and (min-height: 700px) {
+  .agent_transaction {
+    padding: 10px 20px;
+    height: calc(100% - 70px);
+
+    .transaction_header {
+      height: 30px;
+
+      .transaction_header_text {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+
+    .transaction_header_table {
+      .header_table_text {
+        min-height: 40px;
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+
+    .transaction_body_table {
+      overflow: auto;
+      height: 470px;
+      .body_table_inner {
+        .date_text {
+          font-size: 16px;
+          line-height: 20px;
+          min-height: 40px;
+        }
+
+        .transaction_lists {
+          .transaction_lists_inner {
+            .transaction_list_text {
+              font-size: 16px;
+              line-height: 20px;
+              min-height: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 540px) and (min-height: 930px) {
+  .agent_transaction {
+    padding: 10px 20px;
+    height: calc(100% - 80px);
+
+    .transaction_header {
+      height: 40px;
+
+      .transaction_header_text {
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+
+    .transaction_header_table {
+      .header_table_text {
+        min-height: 45px;
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+
+    .transaction_body_table {
+      overflow: auto;
+      height: 640px;
+      .body_table_inner {
+        .date_text {
+          font-size: 18px;
+          line-height: 22px;
+          min-height: 45px;
+        }
+
+        .transaction_lists {
+          .transaction_lists_inner {
+            .transaction_list_text {
+              font-size: 18px;
+              line-height: 22px;
+              min-height: 45px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 720px) and (min-height: 1240px) {
+  .agent_transaction {
+    padding: 10px 20px;
+    height: calc(100% - 110px);
+
+    .transaction_header {
+      height: 50px;
+
+      .transaction_header_text {
+        font-size: 22px;
+        line-height: 26px;
+      }
+    }
+
+    .transaction_header_table {
+      .header_table_text {
+        min-height: 50px;
+        font-size: 22px;
+        line-height: 26px;
+      }
+    }
+
+    .transaction_body_table {
+      overflow: auto;
+      height: 875px;
+      .body_table_inner {
+        .date_text {
+          font-size: 22px;
+          line-height: 26px;
+          min-height: 50px;
+        }
+
+        .transaction_lists {
+          .transaction_lists_inner {
+            .transaction_list_text {
+              font-size: 22px;
+              line-height: 26px;
+              min-height: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

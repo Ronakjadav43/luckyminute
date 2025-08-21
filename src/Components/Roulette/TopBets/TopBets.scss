@@ -1,0 +1,108 @@
+.game_winners_lists {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 80%;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+
+  .winners_list_inner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+
+    .players_name,
+    .players_amount {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+
+      .player_text,
+      .amount_text {
+        color: #ff9900;
+        font-size: 22px;
+        padding: 5px 0;
+      }
+    }
+  }
+
+  .winners_list_main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    // height: 100%;
+    overflow: auto;
+    padding-top: 15%;
+
+    .winners_list_inner {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 10px;
+
+      .players_name,
+      .players_amount {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 33.33%;
+
+        .player,
+        .amount {
+          color: #fff;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 300px) and (min-height: 430px) {
+  .winners_list_main {
+    height: 220px;
+  }
+}
+
+@media only screen and (min-width: 360px) and (min-height: 485px) {
+  .winners_list_main {
+    height: 250px;
+  }
+}
+
+@media only screen and (min-width: 300px) and (min-height: 550px) {
+  .winners_list_main {
+    height: 220px;
+  }
+}
+
+@media only screen and (min-width: 360px) and (min-height: 620px) {
+  .winners_list_main {
+    height: 250px;
+  }
+}
+
+@media only screen and (min-width: 390px) and (min-height: 660px) {
+  .winners_list_main {
+    height: 290px;
+  }
+}
+
+@media only screen and (min-width: 420px) and (min-height: 700px) {
+  .winners_list_main {
+    height: 330px;
+  }
+}
+
+@media only screen and (min-width: 540px) and (min-height: 930px) {
+  .winners_list_main {
+    height: 400px;
+  }
+}
+
+@media only screen and (min-width: 720px) and (min-height: 1240px) {
+  .winners_list_main {
+    height: 550px;
+  }
+}

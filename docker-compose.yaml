@@ -1,0 +1,39 @@
+# Use postgres/example user/password credentials
+version: "3.8"
+
+networks:
+  lm-network:
+    driver: bridge
+
+services:
+  postgres:
+    image: postgres:14-alpine
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=secret
+      - POSTGRES_DB=tgen
+    ports:
+      - 5432:5432
+    networks:
+      - lm-network
+    restart: on-failure
+    # command: ["postgres", "-c", "log_statement=all"] # Uncomment to see all queries in the logs
+
+  backend:
+    image: asia.gcr.io/roulette-176221/tgen:latest
+    # pull_policy: always # Uncomment to pull a new version of the backend every time
+    depends_on:
+      - postgres
+    networks:
+      - lm-network
+    ports:
+      - 8080:8080
+    volumes:
+      - ./build/:/tmp/www
+    environment:
+      - USE_DEV_CONTENT=true
+      - DSN=postgresql://postgres:secret@postgres/tgen
+      - PORT=8080
+      - GRPC_PORT=8086
+      - PEPPER=super_secret
+      - API_KEY=mega_secret

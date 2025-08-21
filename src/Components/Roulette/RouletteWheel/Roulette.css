@@ -1,0 +1,926 @@
+html,
+body {
+  font-family: arial;
+  cursor: default;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #434343 !important;
+}
+
+.col_center {
+  justify-content: center !important;
+}
+
+.wheel {
+  width: 230px;
+  height: 230px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-29.5deg);
+}
+
+.outerRim {
+  /* border: 30px solid #434343; */
+  background-image: url("../../../../public/img/Roulette_Wheel\ .png");
+  background-repeat: round;
+  border-radius: 100%;
+  background-color: #797878;
+  position: relative;
+  height: 340px;
+  width: 340px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* transform: rotate(-25deg); */
+}
+
+.sect {
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  border-radius: 100%;
+  clip: rect(0px, 230px, 230px, 115px);
+}
+
+.double,
+.single {
+  position: absolute;
+  z-index: 1;
+  color: #fff;
+  font-size: 20px;
+  transform: rotate(8deg);
+}
+
+.double {
+  left: 120px;
+  margin-top: 3.5px;
+}
+
+.single {
+  left: 126px;
+  margin-top: 3.5px;
+}
+
+.block {
+  transition: all 1s;
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  border-radius: 100%;
+  clip: rect(0px, 115px, 230px, 0px);
+}
+
+#sect1 .block {
+  background-color: #313131;
+  transform: rotate(18.95deg);
+}
+
+#sect2 .block,
+#sect4 .block,
+#sect6 .block,
+#sect8 .block,
+#sect10 .block,
+#sect12 .block,
+#sect14 .block,
+#sect16 .block,
+#sect18 .block,
+#sect20 .block,
+#sect22 .block,
+#sect24 .block,
+#sect26 .block,
+#sect28 .block,
+#sect30 .block,
+#sect32 .block,
+#sect34 .block,
+#sect36 .block {
+  background-color: #313131;
+  transform: rotate(18.95deg);
+}
+
+#sect2 span,
+#sect4 span,
+#sect6 span,
+#sect8 span,
+#sect10 span,
+#sect12 span,
+#sect14 span,
+#sect16 span,
+#sect18 span,
+#sect20 span,
+#sect22 span,
+#sect24 span,
+#sect26 span,
+#sect28 span,
+#sect30 span,
+#sect32 span,
+#sect34 span,
+#sect36 span {
+  color: red;
+}
+
+#sect3 span,
+#sect5 span,
+#sect7 span,
+#sect9 span,
+#sect11 span,
+#sect13 span,
+#sect15 span,
+#sect17 span,
+#sect19 span,
+#sect21 span,
+#sect23 span,
+#sect25 span,
+#sect27 span,
+#sect29 span,
+#sect31 span,
+#sect33 span,
+#sect35 span,
+#sect37 span {
+  color: #fff;
+}
+
+#sect3 .block,
+#sect5 .block,
+#sect7 .block,
+#sect9 .block,
+#sect11 .block,
+#sect13 .block,
+#sect15 .block,
+#sect17 .block,
+#sect19 .block,
+#sect21 .block,
+#sect23 .block,
+#sect25 .block,
+#sect27 .block,
+#sect29 .block,
+#sect31 .block,
+#sect33 .block,
+#sect35 .block,
+#sect37 .block {
+  background-color: #313131;
+  transform: rotate(18.95deg);
+}
+
+.pocketsRim {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  border: 2px solid #ff9900;
+}
+
+.ballTrack {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border-radius: 100%;
+  z-index: 2;
+}
+
+.ball {
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  position: relative;
+  left: 77px;
+  top: -5px;
+}
+
+.pockets {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  opacity: 0.5;
+}
+
+.cone {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  border: 3px solid #000;
+  border-radius: 100%;
+  background: #1b1b1b;
+  box-shadow: rgb(255 248 248 / 56%) 0px 14px 142px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(29deg);
+}
+
+.cone span {
+  font-size: 40px;
+  color: red;
+}
+
+/*wheel*/
+@keyframes wheelRotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes ballRotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-359deg);
+  }
+}
+
+#sect1 {
+  transform: rotate(18.95deg);
+}
+
+#sect2 {
+  transform: rotate(37.9deg);
+}
+
+#sect3 {
+  transform: rotate(56.85deg);
+}
+
+#sect4 {
+  transform: rotate(75.8deg);
+}
+
+#sect5 {
+  transform: rotate(94.75deg);
+}
+
+#sect6 {
+  transform: rotate(113.7deg);
+}
+
+#sect7 {
+  transform: rotate(132.65deg);
+}
+
+#sect8 {
+  transform: rotate(151.6deg);
+}
+
+#sect9 {
+  transform: rotate(170.55deg);
+}
+
+#sect10 {
+  transform: rotate(189.5deg);
+}
+
+#sect11 {
+  transform: rotate(208.45deg);
+}
+
+#sect12 {
+  transform: rotate(227.4deg);
+}
+
+#sect13 {
+  transform: rotate(246.35deg);
+}
+
+#sect14 {
+  transform: rotate(265.3deg);
+}
+
+#sect15 {
+  transform: rotate(284.25deg);
+}
+
+#sect16 {
+  transform: rotate(303.2deg);
+}
+
+#sect17 {
+  transform: rotate(322.15deg);
+}
+
+#sect18 {
+  transform: rotate(341.1deg);
+}
+
+#sect19 {
+  transform: rotate(360.05deg);
+}
+
+#sect1 span {
+  color: #07ee07;
+}
+
+.border_line {
+  background-color: #ff9900;
+  height: 2px;
+  width: 200px;
+  z-index: 58;
+  position: absolute;
+  top: 94px;
+  left: 9px;
+  transform: rotate(72deg);
+}
+
+@media only screen and (min-width: 300px) and (min-height: 430px) {
+  .outerRim {
+    width: 290px;
+    height: 290px;
+  }
+
+  .wheel {
+    width: 200px;
+    height: 200px;
+  }
+
+  .sect {
+    width: 200px;
+    height: 200px;
+    clip: rect(0px, 200px, 200px, 100px);
+  }
+
+  .double,
+  .single {
+    font-size: 16px;
+  }
+
+  .double {
+    left: 107px;
+  }
+
+  .single {
+    left: 111px;
+  }
+
+  .block {
+    width: 200px;
+    height: 200px;
+    clip: rect(0px, 100px, 200px, 0px);
+  }
+
+  .pocketsRim {
+    width: 130px;
+    height: 130px;
+  }
+
+  .ballTrack {
+    width: 100px;
+    height: 100px;
+  }
+
+  .ball {
+    width: 8px;
+    height: 8px;
+    left: 71px;
+    top: 4px;
+  }
+
+  .pockets {
+    width: 130px;
+    height: 130px;
+  }
+
+  .cone {
+    height: 60px;
+    width: 60px;
+  }
+
+  .cone span {
+    font-size: 30px;
+  }
+
+  .border_line {
+    top: 81px;
+    left: -5px;
+    transform: rotate(71deg);
+  }
+}
+
+@media only screen and (min-width: 360px) and (min-height: 485px) {
+  .outerRim {
+    width: 340px;
+    height: 340px;
+  }
+
+  .wheel {
+    width: 230px;
+    height: 230px;
+  }
+
+  .sect {
+    width: 230px;
+    height: 230px;
+    clip: rect(0px, 230px, 230px, 115px);
+  }
+
+  .double,
+  .single {
+    font-size: 18px;
+  }
+
+  .double {
+    left: 123px;
+  }
+
+  .single {
+    left: 128px;
+  }
+
+  .block {
+    width: 230px;
+    height: 230px;
+    clip: rect(0px, 115px, 230px, 0px);
+  }
+
+  .pocketsRim {
+    width: 160px;
+    height: 160px;
+  }
+
+  .ballTrack {
+    width: 150px;
+    height: 150px;
+  }
+
+  .ball {
+    width: 10px;
+    height: 10px;
+    left: 100px;
+    top: 18px;
+  }
+
+  .pockets {
+    width: 160px;
+    height: 160px;
+  }
+
+  .cone {
+    height: 80px;
+    width: 80px;
+  }
+
+  .cone span {
+    font-size: 40px;
+  }
+
+  .border_line {
+    top: 81px;
+    left: 5px;
+    transform: rotate(71deg);
+  }
+}
+
+@media only screen and (min-width: 300px) and (min-height: 550px) {
+  .outerRim {
+    width: 290px;
+    height: 290px;
+  }
+
+  .wheel {
+    width: 200px;
+    height: 200px;
+  }
+
+  .sect {
+    width: 200px;
+    height: 200px;
+    clip: rect(0px, 200px, 200px, 100px);
+  }
+
+  .double,
+  .single {
+    font-size: 16px;
+  }
+
+  .double {
+    left: 107px;
+  }
+
+  .single {
+    left: 111px;
+  }
+
+  .block {
+    width: 200px;
+    height: 200px;
+    clip: rect(0px, 100px, 200px, 0px);
+  }
+
+  .pocketsRim {
+    width: 130px;
+    height: 130px;
+  }
+
+  .ballTrack {
+    width: 100px;
+    height: 100px;
+  }
+
+  .ball {
+    width: 8px;
+    height: 8px;
+    left: 71px;
+    top: 4px;
+  }
+
+  .pockets {
+    width: 130px;
+    height: 130px;
+  }
+
+  .cone {
+    height: 60px;
+    width: 60px;
+  }
+
+  .cone span {
+    font-size: 30px;
+  }
+
+  .border_line {
+    top: 81px;
+    left: -5px;
+    transform: rotate(71deg);
+  }
+}
+
+@media only screen and (min-width: 360px) and (min-height: 620px) {
+  .outerRim {
+    width: 340px;
+    height: 340px;
+  }
+
+  .wheel {
+    width: 230px;
+    height: 230px;
+  }
+
+  .sect {
+    width: 230px;
+    height: 230px;
+    clip: rect(0px, 230px, 230px, 115px);
+  }
+
+  .double,
+  .single {
+    font-size: 18px;
+  }
+
+  .double {
+    left: 123px;
+  }
+
+  .single {
+    left: 128px;
+  }
+
+  .block {
+    width: 230px;
+    height: 230px;
+    clip: rect(0px, 115px, 230px, 0px);
+  }
+
+  .pocketsRim {
+    width: 160px;
+    height: 160px;
+  }
+
+  .ballTrack {
+    width: 150px;
+    height: 150px;
+  }
+
+  .ball {
+    width: 10px;
+    height: 10px;
+    left: 100px;
+    top: 18px;
+  }
+
+  .pockets {
+    width: 160px;
+    height: 160px;
+  }
+
+  .cone {
+    height: 80px;
+    width: 80px;
+  }
+
+  .cone span {
+    font-size: 40px;
+  }
+
+  .border_line {
+    top: 81px;
+    left: 5px;
+    transform: rotate(71deg);
+  }
+}
+
+@media only screen and (min-width: 390px) and (min-height: 660px) {
+  .outerRim {
+    width: 380px;
+    height: 380px;
+  }
+
+  .wheel {
+    width: 256px;
+    height: 256px;
+  }
+
+  .sect {
+    width: 256px;
+    height: 256px;
+    clip: rect(0px, 256px, 256px, 128px);
+  }
+
+  .double,
+  .single {
+    font-size: 20px;
+  }
+
+  .double {
+    left: 138px;
+  }
+
+  .single {
+    left: 146px;
+  }
+
+  .block {
+    width: 256px;
+    height: 256px;
+    clip: rect(0px, 128px, 256px, 0px);
+  }
+
+  .pocketsRim {
+    width: 180px;
+    height: 180px;
+  }
+
+  .ballTrack {
+    width: 150px;
+    height: 150px;
+  }
+
+  .ball {
+    width: 12px;
+    height: 12px;
+    left: 106px;
+    top: 6px;
+  }
+
+  .pockets {
+    width: 180px;
+    height: 180px;
+  }
+
+  .cone {
+    height: 90px;
+    width: 90px;
+  }
+
+  .cone span {
+    font-size: 45px;
+  }
+
+  .border_line {
+    top: 81px;
+    left: 14px;
+    transform: rotate(71deg);
+  }
+}
+
+@media only screen and (min-width: 420px) and (min-height: 700px) {
+  .outerRim {
+    width: 400px;
+    height: 400px;
+  }
+
+  .wheel {
+    width: 270px;
+    height: 270px;
+  }
+
+  .sect {
+    width: 270px;
+    height: 270px;
+    clip: rect(0px, 270px, 270px, 135px);
+  }
+
+  .double,
+  .single {
+    font-size: 25px;
+  }
+
+  .double {
+    left: 144px;
+  }
+
+  .single {
+    left: 149px;
+  }
+
+  .block {
+    width: 270px;
+    height: 270px;
+    clip: rect(0px, 135px, 270px, 0px);
+  }
+
+  .pocketsRim {
+    width: 180px;
+    height: 180px;
+  }
+
+  .ballTrack {
+    width: 150px;
+    height: 150px;
+  }
+
+  .ball {
+    width: 12px;
+    height: 12px;
+    left: 106px;
+    top: 6px;
+  }
+
+  .pockets {
+    width: 180px;
+    height: 180px;
+  }
+
+  .cone {
+    height: 90px;
+    width: 90px;
+  }
+
+  .cone span {
+    font-size: 45px;
+  }
+
+  .border_line {
+    top: 81px;
+    left: 19px;
+    transform: rotate(71deg);
+  }
+}
+
+@media only screen and (min-width: 540px) and (min-height: 930px) {
+  .outerRim {
+    width: 510px;
+    height: 510px;
+  }
+
+  .wheel {
+    width: 345px;
+    height: 345px;
+  }
+
+  .sect {
+    width: 345px;
+    height: 345px;
+    clip: rect(0px, 345px, 345px, 172.5px);
+  }
+
+  .double,
+  .single {
+    font-size: 30px;
+  }
+
+  .double {
+    left: 182px;
+  }
+
+  .single {
+    left: 190px;
+  }
+
+  .block {
+    width: 345px;
+    height: 345px;
+    clip: rect(0px, 172.5px, 345px, 0px);
+  }
+
+  .pocketsRim {
+    width: 240px;
+    height: 240px;
+  }
+
+  .ballTrack {
+    width: 200px;
+    height: 200px;
+  }
+
+  .ball {
+    width: 15px;
+    height: 15px;
+    left: 140px;
+    top: 10px;
+  }
+
+  .pockets {
+    width: 240px;
+    height: 240px;
+  }
+
+  .cone {
+    height: 120px;
+    width: 120px;
+  }
+
+  .cone span {
+    font-size: 60px;
+  }
+
+  .border_line {
+    top: 81px;
+    left: 43px;
+    transform: rotate(71deg);
+  }
+}
+
+@media only screen and (min-width: 720px) and (min-height: 1240px) {
+  .outerRim {
+    width: 680px;
+    height: 680px;
+  }
+
+  .wheel {
+    width: 460px;
+    height: 460px;
+  }
+
+  .sect {
+    width: 460px;
+    height: 460px;
+    clip: rect(0px, 460px, 460px, 230px);
+  }
+
+  .double,
+  .single {
+    font-size: 45px;
+  }
+
+  .double {
+    left: 240px;
+  }
+
+  .single {
+    left: 252px;
+  }
+
+  .block {
+    width: 460px;
+    height: 460px;
+    clip: rect(0px, 230px, 460px, 0px);
+  }
+
+  .pocketsRim {
+    width: 300px;
+    height: 300px;
+  }
+
+  .ballTrack {
+    width: 200px;
+    height: 200px;
+  }
+
+  .ball {
+    width: 20px;
+    height: 20px;
+    left: 145px;
+    top: -8px;
+  }
+
+  .pockets {
+    width: 300px;
+    height: 300px;
+  }
+
+  .cone {
+    height: 160px;
+    width: 160px;
+  }
+
+  .cone span {
+    font-size: 80px;
+  }
+
+  .border_line {
+    top: 81px;
+    left: 81px;
+    transform: rotate(71deg);
+  }
+}

@@ -1,0 +1,191 @@
+.slick-dots {
+    display: none !important;
+}
+
+.slider_main {
+    width: calc(100% - 70px);
+
+    .chip {
+        width: 55px !important;
+        height: 55px !important;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        border: 3px solid #FF9900;
+        background-color: #D9D9D9;
+        color: #000;
+        margin: 0 7px;
+    }
+
+    .chip1 {
+        border-color: #0F9D58;
+    }
+
+    .chip2 {
+        border-color: #DB4437;
+    }
+
+    .chip3 {
+        border-color: #F4B400;
+    }
+
+    .chip4 {
+        border-color: #4285F4;
+    }
+
+    .slick-next:before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f101";
+        display: inline-block;
+        padding-right: 3px;
+        vertical-align: middle;
+        font-weight: 900;
+        font-size: 40px;
+    }
+
+    .slick-prev:before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f100";
+        display: inline-block;
+        padding-right: 3px;
+        vertical-align: middle;
+        font-weight: 900;
+        font-size: 40px;
+    }
+
+    .slick-next,
+    .slick-prev {
+        top: 50%;
+    }
+
+    .slick-prev {
+        left: -33px;
+        width: unset;
+        height: unset;
+    }
+
+    .slick-next {
+        right: -37px;
+        width: unset;
+        height: unset;
+    }
+
+    .slick-initialized .slick-slide {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+@media only screen and (min-width: 300px) and (min-height: 550px) {
+    .slider_main {
+        .chip {
+            width: 48px !important;
+            height: 48px !important;
+            font-size: 16px;
+        }
+
+        .slick-next:before,
+        .slick-prev:before {
+            font-size: 40px;
+        }
+    }
+}
+
+@media only screen and (min-width: 360px) and (min-height: 620px) {
+    .slider_main {
+        .chip {
+            width: 55px !important;
+            height: 55px !important;
+            font-size: 16px;
+        }
+
+        .slick-next:before,
+        .slick-prev:before {
+            font-size: 40px;
+        }
+    }
+}
+
+@media only screen and (min-width: 390px) and (min-height: 660px) {
+    .slider_main {
+        .chip {
+            width: 55px !important;
+            height: 55px !important;
+            font-size: 16px;
+        }
+
+        .slick-next:before,
+        .slick-prev:before {
+            font-size: 40px;
+        }
+    }
+}
+
+@media only screen and (min-width: 420px) and (min-height: 700px) {
+    .slider_main {
+        .chip {
+            width: 55px !important;
+            height: 55px !important;
+            font-size: 16px;
+        }
+
+        .slick-next:before,
+        .slick-prev:before {
+            font-size: 40px;
+        }
+    }
+}
+
+@media only screen and (min-width: 540px) and (min-height: 930px) {
+    .slider_main {
+        width: calc(100% - 120px);
+
+        .chip {
+            width: 82px !important;
+            height: 82px !important;
+            font-size: 28px;
+        }
+
+        .slick-next:before,
+        .slick-prev:before {
+            font-size: 70px;
+        }
+
+        .slick-prev {
+            left: -60px;
+        }
+
+        .slick-next {
+            right: -60px;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 720px) and (min-height: 1240px) {
+
+    .slider_main {
+        width: calc(100% - 160px);
+
+        .chip {
+            width: 110px !important;
+            height: 110px !important;
+            font-size: 36px;
+        }
+
+        .slick-next:before,
+        .slick-prev:before {
+            font-size: 80px;
+        }
+
+        .slick-prev {
+            left: -77px;
+        }
+
+        .slick-next {
+            right: -81px;
+        }
+    }
+}

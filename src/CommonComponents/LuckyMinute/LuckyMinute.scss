@@ -1,0 +1,67 @@
+.game_rules_two {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    height: 65px;
+    width: 100%;
+    justify-content: center;
+    background: #434343;
+    border-radius: 10px;
+
+    span {
+        color: #FF0000;
+    }
+}
+
+@media only screen and (min-width: 300px) and (min-height: 550px) {
+    .game_rules_two {
+        width: 95%;
+        font-size: 24px;
+        height: 48px;
+    }
+}
+
+@media only screen and (min-width: 360px) and (min-height: 620px) {
+    .game_rules_two {
+        width: 90%;
+        font-size: 24px;
+        height: 55px;
+    }
+}
+
+@media only screen and (min-width: 390px) and (min-height: 660px) {
+    .game_rules_two {
+        width: 100%;
+        font-size: 28px;
+        height: 55px;
+    }
+}
+
+@media only screen and (min-width: 420px) and (min-height: 700px) {
+    .game_rules_two {
+        width: 90%;
+        font-size: 32px;
+        height: 55px;
+    }
+}
+
+@media only screen and (min-width: 540px) and (min-height: 930px) {
+    .game_rules_two {
+        width: 100%;
+        font-size: 36px;
+        height: 82px;
+    }
+}
+
+
+@media only screen and (min-width: 720px) and (min-height: 1240px) {
+    .game_rules_two {
+        width: 100%;
+        font-size: 40px;
+        height: 110px;
+    }
+}

@@ -1,0 +1,200 @@
+.baccaratcarddeal {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+
+  .baccaratcarddeal_inner {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+
+    .carddeal_banker_text {
+      font-family: "Inter";
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #db4437;
+      padding: 33px 0 23px 0;
+    }
+
+    .carddeal_player_text {
+      font-family: "Inter";
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #e5e5e5;
+      padding: 33px 0 23px 0;
+    }
+
+    .baccaratcard {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 5px;
+
+      .emt_cards {
+        width: 75px;
+        height: 105px;
+        display: flex;
+        background-color: transparent;
+        border-radius: 5px;
+        overflow: hidden;
+        border: 2px dotted #000;
+      }
+
+      .cards {
+        // width: 75px;
+        // height: 105px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        // padding: 10px;
+        background-color: #fff;
+        border-radius: 5px;
+        overflow: hidden;
+        // border: 1px solid #434343;
+
+        .cards_text {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          gap: 10px;
+          color: red;
+          font-size: 22px;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          display: block;
+        }
+      }
+
+      .cards_rotate {
+        transform: rotate(-90deg);
+      }
+    }
+
+    .game_banker_resul {
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      font-family: "Inter";
+      font-weight: 400;
+      color: #db4437;
+    }
+
+    .game_player_resul {
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      font-family: "Inter";
+      font-weight: 400;
+      color: #e5e5e5;
+    }
+  }
+}
+
+// .wrapper {
+//   // width: 75px;
+//   // height: 105px;
+//   border-radius: 12px;
+//   .card {
+//     div {
+//       color: #e1623f !important;
+//     }
+//     width: 75px;
+//     height: 105px;
+//     margin: 0;
+//     background: #fff;
+//     .content {
+//       display: none;
+//     }
+//     .mark {
+//       font-size: 22px;
+//       background-color: unset;
+//     }
+//     .mark:after {
+//       margin-left: 0;
+//       margin-top: 20px;
+//       font-size: 30px;
+//       display: flex;
+//       justify-content: space-between;
+//     }
+//     .mark.upside-down {
+//       bottom: 0px;
+//       right: 0px;
+//     }
+//     .mark {
+//       top: 0px;
+//       left: 0px;
+//     }
+//   }
+
+//   .card:before {
+//     display: none;
+//   }
+//   .card:after {
+//     display: none;
+//   }
+// }
+
+// .flip-card {
+//   width: 75px;
+//   height: 105px;
+//   perspective: 1000px;
+// }
+
+// .flip-card-inner {
+//   position: relative;
+//   width: 100%;
+//   height: 100%;
+//   text-align: center;
+//   transition: transform 0.6s;
+//   transform-style: preserve-3d;
+//   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+// }
+
+// .flip-card-front,
+// .flip-card-back {
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;
+//   -webkit-backface-visibility: hidden;
+//   backface-visibility: hidden;
+// }
+
+// .flip-card-front {
+//   background-color: #bbb;
+//   color: black;
+// }
+
+// .flip-card-back {
+//   transform: rotateY(180deg);
+// }
+
+// .turn {
+//   transform: rotateY(180deg) !important;
+// }
+
+
+:where(.ReactFlipCard_container__e1Zcc) {
+  width: unset;
+  height: unset;
+}

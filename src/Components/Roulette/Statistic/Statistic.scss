@@ -1,0 +1,239 @@
+.gamestatistic {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+
+    .statistic_progressbar {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        padding-right: 10px;
+        gap: 20px;
+        width: 60%;
+
+        .progress {
+            display: flex;
+            overflow: hidden;
+            font-size: 18px !important;
+            background-color: transparent;
+            border-radius: 0 !important;
+            height: 50px !important;
+
+            .progress-bar {
+                color: #FF9900 !important;
+                font-weight: 500;
+            }
+
+            .progress-bar-striped {
+                background-image: unset !important;
+            }
+
+            .progressbar_red {
+                background-color: red !important;
+                color: #000 !important;
+            }
+
+            .progressbar_white {
+                background-color: #fff !important;
+                color: #000 !important;
+            }
+
+            .progressbar_warning {
+                background-color: #42FF00 !important;
+            }
+
+            .progressbar_even,
+            .progressbar_odd {
+                color: #FF9900 !important;
+                background-color: #434343 !important;
+            }
+        }
+
+        .hot_div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            height: 50px;
+            padding: 10px;
+            background: linear-gradient(90deg, rgba(215, 107, 107, 1) 0%, rgb(255 255 255 / 61%) 50%, rgba(215, 107, 107, 1) 100%);
+
+            .hot_text {
+                color: #000;
+                font-size: 18px;
+                font-weight: 400;
+
+                .red_chip {
+                    color: red;
+                    font-size: 18px;
+                    border-radius: 100%;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: radial-gradient(circle, rgb(255 255 255 / 56%) -50%, #0b0b0b 100%);
+                }
+
+                .white_chip {
+                    color: #fff;
+                    font-size: 18px;
+                    border-radius: 100%;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: radial-gradient(circle, rgb(255 255 255 / 56%) -50%, #0b0b0b 100%);
+                }
+
+                .warning {
+                    color: #42FF00 !important;
+                }
+            }
+
+            .red_chip {
+                color: red;
+                font-size: 18px;
+                border-radius: 100%;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: radial-gradient(circle, rgb(255 255 255 / 56%) -50%, #0b0b0b 100%);
+            }
+
+            .white_chip {
+                color: #fff;
+                font-size: 18px;
+                border-radius: 100%;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: radial-gradient(circle, rgb(255 255 255 / 56%) -50%, #0b0b0b 100%);
+            }
+
+            .warning {
+                color: #42FF00 !important;
+            }
+        }
+
+        .cool_div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            height: 50px;
+            padding: 10px;
+            background: linear-gradient(90deg, #74a7d6 0%, rgb(255 255 255 / 61%) 50%, #74a7d6 100%);
+
+            .hot_text {
+                color: #000;
+                font-size: 18px;
+                font-weight: 400;
+
+                .red_chip {
+                    color: red;
+                    font-size: 18px;
+                    border-radius: 100%;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: radial-gradient(circle, rgb(255 255 255 / 56%) -50%, #0b0b0b 100%);
+                }
+
+                .white_chip {
+                    color: #fff;
+                    font-size: 18px;
+                    border-radius: 100%;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: radial-gradient(circle, rgb(255 255 255 / 56%) -50%, #0b0b0b 100%);
+                }
+
+                .warning {
+                    color: #42FF00 !important;
+                }
+            }
+
+            .red_chip {
+                color: red;
+                font-size: 18px;
+                border-radius: 100%;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: radial-gradient(circle, rgb(255 255 255 / 56%) -50%, #0b0b0b 100%);
+            }
+
+            .white_chip {
+                color: #fff;
+                font-size: 18px;
+                border-radius: 100%;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: radial-gradient(circle, rgb(255 255 255 / 56%) -50%, #0b0b0b 100%);
+            }
+
+            .warning {
+                color: #42FF00 !important;
+            }
+        }
+    }
+
+    .statistic_chips {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100px;
+        min-width: 100px;
+        margin: 0 auto;
+        justify-content: center;
+
+        div:nth-child(odd) {
+            margin-top: 0px;
+        }
+
+        .red_chips {
+            color: red;
+            font-size: 20px;
+            border-radius: 100%;
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: radial-gradient(circle, rgb(255 255 255 / 56%) -50%, #0b0b0b 100%);
+            margin-top: 25px;
+        }
+
+        .white_chips {
+            color: #fff;
+            font-size: 20px;
+            border-radius: 100%;
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: radial-gradient(circle, rgb(255 255 255 / 56%) -50%, #0b0b0b 100%);
+            margin-top: 15px;
+        }
+
+        .warning {
+            color: #42FF00 !important;
+        }
+    }
+}
